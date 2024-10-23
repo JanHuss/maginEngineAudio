@@ -30,5 +30,6 @@ So here we are. Ready to tackle this exciting task. This readme will be altered 
 
 ---
 
-##Current progress	- ~~initial stages. Honours project idea submitted~~
-			- removed initial code and setup a project using **GLFW** and **Dear ImGui**
+##Current progress:
+- ~~initial stages. Honours project idea submitted~~
+- removed initial code and setup a project using **GLFW** and **Dear ImGui**
