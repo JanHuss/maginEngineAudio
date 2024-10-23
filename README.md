@@ -1,4 +1,4 @@
-﻿# Audio engine evelopment
+﻿# Audio engine development
 
 ---
 
@@ -6,8 +6,6 @@
 > This is currently and ongoing project
 
 ---
-
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/)
 
 ## Background
 A bucket list and honours project developed and engineered by Jan Huss
@@ -24,6 +22,7 @@ An amazing opportunity arose in which I could build this project for two modules
 ## Current progress:
 - ~~initial stages. Honours project idea submitted~~
 - removed initial code and setup a project using **GLFW** and **Dear ImGui**
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/)
 
 ## Libraries used
 - [Dear ImGui](https://github.com/ocornut/imgui)
