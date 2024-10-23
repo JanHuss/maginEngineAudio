@@ -21,7 +21,7 @@ An amazing opportunity arose in which I could build this project for two modules
 
 ## Current progress:
 - ~~initial stages. Honours project idea submitted~~
-- removed initial code and setup a project using **GLFW** and **Dear ImGui**
+- removed initial code and setup a project using **GLFW** and **Dear ImGui**<br>
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/)
 
 ## Libraries used
