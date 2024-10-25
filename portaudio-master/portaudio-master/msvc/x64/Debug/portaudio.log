@@ -1,0 +1,19 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  pa_asio.cpp
+  asiolist.cpp
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(24,31): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(31,33): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(87,8): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(89,12): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(224,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(246,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  asiodrivers.cpp
+  asio.cpp
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\common\asio.cpp(76,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\common\asio.cpp(86,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\hussj\Downloads\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\common\asio.cpp(205,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1392,5): warning MSB8012: TargetPath(C:\Users\hussj\Downloads\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio.dll) does not match the Linker's OutputFile property value (C:\Users\hussj\Downloads\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio_x64.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1394,5): warning MSB8012: TargetName(portaudio) does not match the Linker's OutputFile property value (portaudio_x64). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library x64\Debug\portaudio_x64.lib and object x64\Debug\portaudio_x64.exp
+  portaudio.vcxproj -> C:\Users\hussj\Downloads\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio.dll
