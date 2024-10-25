@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\",
+  "WorkspaceRootPath": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\imgui\\imgui_impl_opengl3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\imgui\\imgui_impl_opengl3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\imgui\\imgui_impl_opengl3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\imgui\\imgui_demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\imgui\\imgui_demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\imgui\\imgui_demo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,37 +28,35 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "imgui_demo.cpp",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\imgui\\imgui_demo.cpp",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\imgui\\imgui_demo.cpp",
               "RelativeDocumentMoniker": "AudioEngine\\imgui\\imgui_demo.cpp",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\imgui\\imgui_demo.cpp",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\imgui\\imgui_demo.cpp",
               "RelativeToolTip": "AudioEngine\\imgui\\imgui_demo.cpp",
               "ViewState": "AgIAAKwBAAAAAAAAAAAowL8BAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-23T15:20:28.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T15:20:28.911Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "imgui_impl_opengl3.cpp",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\imgui\\imgui_impl_opengl3.cpp",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\imgui\\imgui_impl_opengl3.cpp",
               "RelativeDocumentMoniker": "AudioEngine\\imgui\\imgui_impl_opengl3.cpp",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\imgui\\imgui_impl_opengl3.cpp",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\imgui\\imgui_impl_opengl3.cpp",
               "RelativeToolTip": "AudioEngine\\imgui\\imgui_impl_opengl3.cpp",
               "ViewState": "AgIAAH8BAAAAAAAAAAAQwJIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-23T14:47:30.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T14:47:30.354Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\main.cpp",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\main.cpp",
               "RelativeDocumentMoniker": "AudioEngine\\main.cpp",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Studies\\Year 4\\CMP400\\OpenGLTest\\AudioEngine\\AudioEngine\\main.cpp",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\main.cpp",
               "RelativeToolTip": "AudioEngine\\main.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADEAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T08:48:48.017Z",
               "EditorCaption": ""
