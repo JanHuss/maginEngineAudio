@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 
+#include "EngineBase.h"
 #include "EventBase.h"
 
 #include <glad/glad.h>
@@ -21,6 +22,15 @@ typedef int PaStreamCallback (const void* input, // points to incoming audio dat
 	                          PaStreamCallbackFlags statusFlags, // contains flags that indicate whether input and/or output buffers have been inserted or will be dropped
 	                          void* userData); // A custom pointer that is passed to the callback function
 // -----------------------------------------------------------------------------------------
+	// --------------------------------------------------------------------------------------------
+    // NEXT STEPS:
+    // 1. load audio file
+	// 2. play audio file using realtime audio callback
+	// 3. load audio in an event frame (just one for now)
+	// 4. Throw Audio callback into AudioThread class
+    // 5. Play multiple audio files with multiple voices
+	// --------------------------------------------------------------------------------------------
+
 	
 // create test wave. I'm keeping this just in case for testing ------------------------------
 typedef struct {
@@ -77,7 +87,7 @@ int main(void)
 		// VERY new to this method but I find it interesting and useful for error handling
     {   
 		// Initialise EventBase class. This will change and be initialised in a future application class
-		std::vector<EventBase> events;
+		EngineBase engine;
 
 	    // PortAudio initialization and test ----------------------------------------------------------
         PaError err = Pa_Initialize();
@@ -147,37 +157,12 @@ int main(void)
 	        glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
             // Render here
             glClear(GL_COLOR_BUFFER_BIT);
-
             ImGui_ImplOpenGL3_NewFrame();
             ImGui_ImplGlfw_NewFrame();
             ImGui::NewFrame();
 
-			// Engine Frame
-		    ImGui::Begin("Engine"); // shouldn't be able to see the title bar
-		    ImGui::SetWindowSize(ImVec2(640, 500));
-		    ImGui::SetWindowPos(ImVec2(0, -20)); // hide the title bar with a negative y value
-		    ImGui::Text("Build Event here");
-			// Buttons for the engine frame here -----------------------------------------------------
+			engine.Render(); // core application
 
-
-
-            // Adding Events to vector when button is pressed ----------------------------------------
-			if(ImGui::Button("Add Event"))
-			{
-				// Add event to engine frame
-				events.push_back(EventBase());
-				//std::cout << "Amount of events called: " << events.size() << std::endl;
-			}
-            if (!events.empty()) 
-            {
-                for (auto& ev : events)
-			        ev.Render();
-            }
-            // --------------------------------------------------------------------------------------
-
-			
-
-		    ImGui::End();
             //ImGui::ShowDemoWindow(); // Show demo window! :)
             ImGui::Render();
             ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

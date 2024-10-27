@@ -1,6 +1,6 @@
 #include "EventBase.h"
 
-EventBase::EventBase()
+EventBase::EventBase(int iD, std::string evNa) : eventID(iD), eventName(evNa)
 {
 	// shove the next event down the y axis...
 	// have a delete button in the event frame....
@@ -16,8 +16,9 @@ void EventBase::Update()
 
 void EventBase::Render()
 {
+	ImGui::PushID(eventID);
 	//Initialise eventbase frame from ImGui
-	ImGui::BeginChild("Event Frame", ImVec2(150, 150), true);
+	ImGui::BeginChild("Event Frame", ImVec2(300, 100), true);
     ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.5f, 0.0f, 1.0f));
 	ImGui::Text("Event Frame");
     ImGui::PopStyleColor();
@@ -30,16 +31,15 @@ void EventBase::Render()
 	ImGui::Button("Pause");
 	ImGui::SameLine();
 	ImGui::Button("Stop");
+	ImGui::SameLine();
+	ImGui::Text("Volume slider here");
 	ImGui::Button("Load File");
+	ImGui::SameLine();
+	ImGui::Text("Pitch slider here");
 	// if file loaded display current file name
 	// otherwise display "No file loaded"
-
-	// Volume and pitch sliders. NOTE!!!! Second parameter needs to be pulled from the audio data
-	ImGui::Text("Volume slider here");
-	ImGui::Text("Pitch slider here");
-	//ImGui::SliderFloat("Volume", 0, 0.0f, 1.0f);
-	//ImGui::SliderFloat("Pitch", 0, 0.0f, 1.0f);
 	
 
 	ImGui::EndChild();
+	ImGui::PopID();
 }
