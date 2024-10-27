@@ -6,25 +6,29 @@
 #include <portaudio.h>
 #include <math.h>
 #include <iostream>
+#include <vector>
+
+#include "EventBase.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-// Create PortAudio callback function
+// Create PortAudio callback function for streaming audio data to the sound card ------------
 typedef int PaStreamCallback (const void* input, // points to incoming audio data
 	                          void* output, // points to the buffer where to write the outgoing audio data
 	                          unsigned long frameCount, // number of frames the sound card is requesting
 	                          const PaStreamCallbackTimeInfo* timeInfo, // provides time information for the current audio callback
 	                          PaStreamCallbackFlags statusFlags, // contains flags that indicate whether input and/or output buffers have been inserted or will be dropped
 	                          void* userData); // A custom pointer that is passed to the callback function
+// -----------------------------------------------------------------------------------------
 	
-// create test wave. remove when successful ------------------------------
+// create test wave. I'm keeping this just in case for testing ------------------------------
 typedef struct {
     float left_phase;
     float right_phase;
 } paTestData;
 
-static int patestCallback(const void *inputBuffer, void *outputBuffer,
+static int paWaveCallback(const void *inputBuffer, void *outputBuffer,
                           unsigned long framesPerBuffer,
                           const PaStreamCallbackTimeInfo* timeInfo,
                           PaStreamCallbackFlags statusFlags,
@@ -71,7 +75,10 @@ int main(void)
 {
 	try // try block for error handling - if an error occurs, the catch block will be executed
 		// VERY new to this method but I find it interesting and useful for error handling
-    {
+    {   
+		// Initialise EventBase class. This will change and be initialised in a future application class
+		std::vector<EventBase> events;
+
 	    // PortAudio initialization and test ----------------------------------------------------------
         PaError err = Pa_Initialize();
         paTestData data = { 0 };  // Initialize phase data for the sine wave
@@ -85,7 +92,7 @@ int main(void)
 
 	    // Open an audio stream
 	    PaStream* stream;
-	    err = Pa_OpenDefaultStream(&stream, 0, 2, paFloat32, 44100, 256, patestCallback, &data);
+	    err = Pa_OpenDefaultStream(&stream, 0, 2, paFloat32, 44100, 256, paWaveCallback, &data);
 
 	    if (err != paNoError) throw std::runtime_error(Pa_GetErrorText(err));
 
@@ -120,7 +127,7 @@ int main(void)
 	    glClear(GL_COLOR_BUFFER_BIT);
 	    glfwSwapBuffers(window);
 
-	    // Dear ImGui initialization and test --------------------------------------------------------
+	    // Dear ImGui initialization ------------------------------------------------------------------
 	    IMGUI_CHECKVERSION();
 	    ImGui::CreateContext();
 	    ImGuiIO& io = ImGui::GetIO(); (void)io;
@@ -128,6 +135,8 @@ int main(void)
 	    ImGui_ImplGlfw_InitForOpenGL(window, true);
         ImGui_ImplOpenGL3_Init("#version 330");
 	    // --------------------------------------------------------------------------------------------
+        // Dear ImGui image loading
+
         
 		// Simulate an error for testing the catch block
         // throw std::runtime_error("Artificial error for testing catch block");
@@ -143,22 +152,46 @@ int main(void)
             ImGui_ImplGlfw_NewFrame();
             ImGui::NewFrame();
 
+			// Engine Frame
 		    ImGui::Begin("Engine"); // shouldn't be able to see the title bar
 		    ImGui::SetWindowSize(ImVec2(640, 500));
 		    ImGui::SetWindowPos(ImVec2(0, -20)); // hide the title bar with a negative y value
 		    ImGui::Text("Build Event here");
-		    ImGui::End();
+			// Buttons for the engine frame here -----------------------------------------------------
 
+
+
+            // Adding Events to vector when button is pressed ----------------------------------------
+			if(ImGui::Button("Add Event"))
+			{
+				// Add event to engine frame
+				events.push_back(EventBase());
+				//std::cout << "Amount of events called: " << events.size() << std::endl;
+			}
+            if (!events.empty()) 
+            {
+                for (auto& ev : events)
+			        ev.Render();
+            }
+            // --------------------------------------------------------------------------------------
+
+			
+
+		    ImGui::End();
             //ImGui::ShowDemoWindow(); // Show demo window! :)
-        
             ImGui::Render();
             ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 	
+
             // Swap front and back buffers
             glfwSwapBuffers(window);
 
             // Poll for and process events
             glfwPollEvents();
+	
+			// Close applicaiton
+            if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+				glfwSetWindowShouldClose(window, true);
         }
 
         // Cleanup PortAudio
