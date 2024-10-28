@@ -52,24 +52,25 @@ void loadAudio(const char* filename, // name of audio file
 		return;
 	}
 
-    
-	totalFrames = ma_decoder_get_length_in_pcm_frames(&decoder, 0); // get the total number of frames in the audio file
+	totalFrames = ma_decoder_get_length_in_pcm_frames(&decoder, &totalFrames); // get the total number of frames in the audio file
 	channels = decoder.outputChannels; // set channels to the number of channels in the audio file
 	sampleRate = decoder.outputSampleRate; // set sample rate to the audio file's sample rate
 
+	// Resize audio data buffer to fit the audio data
+    audioData.resize(totalFrames * channels);		
+    
+    // Prepare buffer for audio data
     std::cout << "- Audio data check within loadAudio function ----------------------" << std::endl;
 	std::cout << "File loaded: " << filename << std::endl;
 	std::cout << "Total frames in loadAudio: " << totalFrames << std::endl;
 	std::cout << "Channels in loadAudio: " << channels << std::endl;
+	std::cout << "Sample rate in loadAudio: " << sampleRate << std::endl;
 	std::cout << "Audio data size in loadAudio: " << audioData.size() << std::endl;
     std::cout << "-------------------------------------------------------------------\n" << std::endl;
-    // Prepare buffer for audio data
-
-    audioData.resize(totalFrames * channels);
 
     // Read audio data from audio file into buffer
-	result = ma_decoder_read_pcm_frames(&decoder, audioData.data(), totalFrames, 0);
-	if (result < MA_SUCCESS)
+	result = ma_decoder_read_pcm_frames(&decoder, audioData.data(), totalFrames, &totalFrames);
+	if (result != MA_SUCCESS)
 	{
         std::cerr << "Failed to read PCM frames" << std::endl;
 		ma_decoder_uninit(&decoder);

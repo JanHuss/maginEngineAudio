@@ -1,4 +1,4 @@
 ﻿  main.cpp
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\main.cpp(105,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\main.cpp(106,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\main.cpp(106,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\main.cpp(107,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe
