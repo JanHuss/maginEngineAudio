@@ -4,6 +4,8 @@
 #include "imgui_impl_opengl3.h"
 
 #include <portaudio.h>
+#define MINIAUDIO_IMPLEMENTATION
+#include "miniaudio.h"
 #include <math.h>
 #include <iostream>
 #include <vector>
@@ -31,8 +33,55 @@ typedef int PaStreamCallback (const void* input, // points to incoming audio dat
     // 5. Play multiple audio files with multiple voices
 	// --------------------------------------------------------------------------------------------
 
+// This needs to be removed and replaced with a class that will handle the audio callback ---------
+// Load audio file
+void loadAudio(const char* filename, // name of audio file
+	std::vector<float>& audioData, // file's audio data
+	ma_uint64& totalFrames, // total number of frames in the audio file (determines the length of the audio file)
+	ma_uint32& channels, // number of channels the audio file uses
+	ma_uint32& sampleRate) // audio file's sample rate
+{
+	ma_result result; // varible that checks if operation was successful or not
+	ma_decoder decoder; // variable that decodes the audio file
+
+	// Initialize decoder 
+    result = ma_decoder_init_file(filename, NULL, &decoder);
+    if (result != MA_SUCCESS)
+    {
+		std::cerr << "Failed to initialise decoder while loading: " << filename << std::endl;
+		return;
+	}
+
+    
+	totalFrames = ma_decoder_get_length_in_pcm_frames(&decoder, 0); // get the total number of frames in the audio file
+	channels = decoder.outputChannels; // set channels to the number of channels in the audio file
+	sampleRate = decoder.outputSampleRate; // set sample rate to the audio file's sample rate
+
+    std::cout << "- Audio data check within loadAudio function ----------------------" << std::endl;
+	std::cout << "File loaded: " << filename << std::endl;
+	std::cout << "Total frames in loadAudio: " << totalFrames << std::endl;
+	std::cout << "Channels in loadAudio: " << channels << std::endl;
+	std::cout << "Audio data size in loadAudio: " << audioData.size() << std::endl;
+    std::cout << "-------------------------------------------------------------------\n" << std::endl;
+    // Prepare buffer for audio data
+
+    audioData.resize(totalFrames * channels);
+
+    // Read audio data from audio file into buffer
+	result = ma_decoder_read_pcm_frames(&decoder, audioData.data(), totalFrames, 0);
+	if (result < MA_SUCCESS)
+	{
+        std::cerr << "Failed to read PCM frames" << std::endl;
+		ma_decoder_uninit(&decoder);
+        return;
+    }
+
+	// Cleanup decoder
+	ma_decoder_uninit(&decoder);
+}
+
 	
-// create test wave. I'm keeping this just in case for testing ------------------------------
+// create test wave. I'm keeping this just in case ------------------------------
 typedef struct {
     float left_phase;
     float right_phase;
@@ -99,20 +148,45 @@ int main(void)
             std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
             return -1;
         }
+		std::cout << "- Library check ---------------------------------------------------" << std::endl;
         std::cout << "PortAudio initialized successfully!" << std::endl;
 
 		// Display PortAudio version
 		std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
 
-	    // Open an audio stream
-	    PaStream* stream;
-	    err = Pa_OpenDefaultStream(&stream, 0, 2, paFloat32, 44100, 256, paWaveCallback, &data);
+        // MiniAudio message
+		std::cout << "MiniAudio installed" << std::endl;
+		std::cout << "MiniAudio version: " << MA_VERSION_STRING << std::endl;
+		std::cout << "-------------------------------------------------------------------\n" << std::endl;
+        
+		// Create audio data variables
+		std::vector<float> audioData;
+        ma_uint64 totalFrames = 0;
+		ma_uint32 channels = 0;
+		ma_uint32 sampleRate = 0;
 
-	    if (err != paNoError) throw std::runtime_error(Pa_GetErrorText(err));
+		// Load audio file
+		const char* fileName = "assets/audio/BigWave.wav"; // set file path here
+		loadAudio(fileName, audioData, totalFrames, channels, sampleRate);
+		// Check if audio file loaded successfully
+		if (!audioData.empty())
+        {
+		    std::cout << "Loaded audio file in main: " << fileName << std::endl;
+		    std::cout << "Total frames in main: " << totalFrames << std::endl;
+            std::cout << "Channels in main: " << channels << std::endl;
+            std::cout << "Sample rate in main: " << sampleRate << std::endl;
+        }
 
-	    // Start the stream
-	    err = Pa_StartStream(stream);
-	    if (err != paNoError) throw std::runtime_error(Pa_GetErrorText(err));
+
+	    //// Open an audio stream
+	    //PaStream* stream;
+	    //err = Pa_OpenDefaultStream(&stream, 0, 2, paFloat32, 44100, 256, paWaveCallback, &data);
+        //
+	    //if (err != paNoError) throw std::runtime_error(Pa_GetErrorText(err));
+        //
+	    //// Start the stream
+	    //err = Pa_StartStream(stream);
+	    //if (err != paNoError) throw std::runtime_error(Pa_GetErrorText(err));
 	
         // --------------------------------------------------------------------------------------------
        
@@ -184,8 +258,8 @@ int main(void)
         }
 
 		// Cleanup and Close PortAudio to free resources
-	    Pa_StopStream(stream);
-	    Pa_CloseStream(stream);
+	    //Pa_StopStream(stream);
+	    //Pa_CloseStream(stream);
         Pa_Terminate(); 
 
 	    // Cleanup ImGui
