@@ -25,5 +25,7 @@ An amazing opportunity arose in which I could build this project for two modules
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/)
 
 ## Libraries used
-- [Dear ImGui](https://github.com/ocornut/imgui)
-- [GLFW](https://www.glfw.org/)
+- [PortAudio](https://www.portaudio.com/): Audio Playback
+- [MiniAudio](https://miniaud.io/): Audio asset handling
+- [Dear ImGui](https://github.com/ocornut/imgui): For UI interaction
+- [GLFW](https://www.glfw.org/): Framework for UI

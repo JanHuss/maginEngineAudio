@@ -19,6 +19,9 @@
     <Filter Include="Source Files\imgui">
       <UniqueIdentifier>{332d3000-d2d7-4152-b1c6-c22f08ac89a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\MiniAudio">
+      <UniqueIdentifier>{eb021da2-3dde-4d1f-b957-9b05a62ec086}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -107,5 +110,11 @@
     <ClInclude Include="AudioThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="miniaudio.h">
+      <Filter>Header Files\MiniAudio</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgui.ini" />
   </ItemGroup>
 </Project>

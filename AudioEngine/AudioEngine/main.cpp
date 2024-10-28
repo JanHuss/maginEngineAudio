@@ -14,7 +14,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-// Create PortAudio callback function for streaming audio data to the sound card ------------
+// Define PortAudio callback function for streaming audio data to the sound card ------------
 typedef int PaStreamCallback (const void* input, // points to incoming audio data
 	                          void* output, // points to the buffer where to write the outgoing audio data
 	                          unsigned long frameCount, // number of frames the sound card is requesting
@@ -64,6 +64,7 @@ static int paWaveCallback(const void *inputBuffer, void *outputBuffer,
         if (data->left_phase >= 1.0f) data->left_phase -= 1.0f;
         if (data->right_phase >= 1.0f) data->right_phase -= 1.0f;
     }
+	//Pa_Sleep(1000); // Sleep for 1 second
     
 	//// Generate a simple saw wave
     //for (i = 0; i < framesPerBuffer; i++) {
@@ -93,12 +94,15 @@ int main(void)
         PaError err = Pa_Initialize();
         paTestData data = { 0 };  // Initialize phase data for the sine wave
 
+
         if (err != paNoError) {
             std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
             return -1;
         }
         std::cout << "PortAudio initialized successfully!" << std::endl;
 
+		// Display PortAudio version
+		std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
 
 	    // Open an audio stream
 	    PaStream* stream;
@@ -111,7 +115,7 @@ int main(void)
 	    if (err != paNoError) throw std::runtime_error(Pa_GetErrorText(err));
 	
         // --------------------------------------------------------------------------------------------
-
+       
 	    // GLFW initialization and test ---------------------------------------------------------------
         GLFWwindow* window;
 
@@ -179,7 +183,7 @@ int main(void)
 				glfwSetWindowShouldClose(window, true);
         }
 
-        // Cleanup PortAudio
+		// Cleanup and Close PortAudio to free resources
 	    Pa_StopStream(stream);
 	    Pa_CloseStream(stream);
         Pa_Terminate(); 
