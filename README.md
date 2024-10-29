@@ -22,8 +22,7 @@ An amazing opportunity arose in which I could build this project for two modules
 ## Current progress:
 - ~~initial stages. Honours project idea submitted~~
 - ~~removed initial code and setup a project using **GLFW** and **Dear ImGui**~~
-- Added PortAudio and MiniAudio libraries to the project. Played around with the engine layout and can play back basic sine and saw waveforms
-<br>
+- Added PortAudio and MiniAudio libraries to the project. Played around with the engine layout and can play back basic sine and saw waveforms<br>
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/)
 
 ## Libraries used
