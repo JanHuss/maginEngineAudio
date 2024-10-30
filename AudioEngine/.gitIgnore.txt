@@ -1,13 +1,15 @@
 # Visual Studio specific files
-.vs/               # Exclude the entire .vs folder
+.vs/                       # Exclude the entire .vs folder
+!.vs/AudioEngine/v17/specific_file.txt # Include specific_file.txt in the v17 folder
+
 *.suo
 *.user
 *.userprefs
 *.sln.ide
 
-# GitHub Copilot indices (if needed)
-.vs/Copilot/      # Exclude the Copilot folder specifically, though already covered by .vs/
-.vs/*.db          # Exclude any database files
+# GitHub Copilot indices
+.vs/AudioEngine/Copilot/              # Exclude the Copilot folder
+.vs/AudioEngine/*.db                  # Exclude any database files
 
 # Build results
 [Dd]ebug/
@@ -16,7 +18,7 @@
 [Oo]bj/
 *.exe
 *.dll
-*.pdb
+*.pdb                    # Exclude all PDB files
 
 # NuGet packages
 *.nupkg
