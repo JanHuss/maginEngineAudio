@@ -1,0 +1,68 @@
+﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  pa_x86_plain_converters.c
+  pa_win_wdmks_utils.c
+  pa_win_waveformat.c
+  pa_win_version.c
+  pa_win_util.c
+  pa_win_hostapis.c
+  pa_win_coinitialize.c
+  pa_win_wmme.c
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wmme\pa_win_wmme.c(717,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wmme\pa_win_wmme.c(853,9): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pa_win_wdmks.c
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(693,5): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1252,21): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1644,21): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1676,17): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1705,21): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1777,29): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1872,33): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1950,49): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(1976,13): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(2695,5): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(2698,5): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(3564,25): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(3571,25): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(3586,34): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wdmks\pa_win_wdmks.c(3589,25): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pa_win_wasapi.c
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wasapi\pa_win_wasapi.c(1751,9): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wasapi\pa_win_wasapi.c(1788,17): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\wasapi\pa_win_wasapi.c(2065,5): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pa_hostapi_skeleton.c
+  pa_win_ds_dynlink.c
+  pa_win_ds.c
+  pa_trace.c
+  pa_stream.c
+  pa_ringbuffer.c
+  pa_process.c
+  pa_front.c
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\common\pa_front.c(148,5): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  pa_dither.c
+  pa_debugprint.c
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\common\pa_debugprint.c(109,9): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+  Compiling...
+  pa_cpuload.c
+  pa_converters.c
+  pa_allocation.c
+  Generating Code...
+cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  pa_asio.cpp
+  asiolist.cpp
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(24,31): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(31,33): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(87,8): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(89,12): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(224,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\host\pc\asiolist.cpp(246,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  asiodrivers.cpp
+  asio.cpp
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\common\asio.cpp(76,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\common\asio.cpp(86,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\src\hostapi\asio\ASIOSDK\common\asio.cpp(205,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Generating Code...
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1392,5): warning MSB8012: TargetPath(D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio.dll) does not match the Linker's OutputFile property value (D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio_x64.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1394,5): warning MSB8012: TargetName(portaudio) does not match the Linker's OutputFile property value (portaudio_x64). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library x64\Debug\portaudio_x64.lib and object x64\Debug\portaudio_x64.exp
+  portaudio.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio.dll
