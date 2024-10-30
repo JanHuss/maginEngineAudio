@@ -4,6 +4,7 @@
 #include "imgui_impl_opengl3.h"
 
 #include <portaudio.h>
+#include <stdio.h>
 #define MINIAUDIO_IMPLEMENTATION
 #include "miniaudio.h"
 #include <math.h>
@@ -48,8 +49,9 @@ void loadAudio(const char* filename, // name of audio file
     result = ma_decoder_init_file(filename, NULL, &decoder);
     if (result != MA_SUCCESS)
     {
-		std::cerr << "Failed to initialise decoder while loading: " << filename << std::endl;
-		return;
+		    std::cerr << "Failed to initialize decoder while loading: " << filename 
+              << ". Error code: " << result << std::endl;
+            return;
 	}
 
 	totalFrames = ma_decoder_get_length_in_pcm_frames(&decoder, &totalFrames); // get the total number of frames in the audio file
@@ -138,7 +140,7 @@ int main(void)
 		// VERY new to this method but I find it interesting and useful for error handling
     {   
 		// Initialise EventBase class. This will change and be initialised in a future application class
-		EngineBase engine;
+		EngineBase engine; 
 
 	    // PortAudio initialization and test ----------------------------------------------------------
         PaError err = Pa_Initialize();
@@ -167,7 +169,7 @@ int main(void)
 		ma_uint32 sampleRate = 0;
 
 		// Load audio file
-		const char* fileName = "assets/audio/BigWave.wav"; // set file path here
+		const char* fileName = "assets\audio\BigWave.wav"; // set file path here
 		loadAudio(fileName, audioData, totalFrames, channels, sampleRate);
 		// Check if audio file loaded successfully
 		if (!audioData.empty())

@@ -1,0 +1,37 @@
+# Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userprefs
+*.sln.ide
+
+# GitHub Copilot indices
+.vs/Copilot/
+.vs/*.db
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+
+# NuGet packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Operating system files
+Thumbs.db
+.DS_Store
