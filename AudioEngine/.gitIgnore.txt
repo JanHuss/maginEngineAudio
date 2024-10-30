@@ -8,7 +8,7 @@
 *.sln.ide
 
 # GitHub Copilot indices
-.vs/AudioEngine/Copilot/              # Exclude the Copilot folder
+.vs/AudioEngine/CopilotIndices/              # Exclude the Copilot folder
 .vs/AudioEngine/*.db                  # Exclude any database files
 
 # Build results
