@@ -1,13 +1,13 @@
 # Visual Studio specific files
-.vs/
+.vs/               # Exclude the entire .vs folder
 *.suo
 *.user
 *.userprefs
 *.sln.ide
 
-# GitHub Copilot indices
-.vs/Copilot/
-.vs/*.db
+# GitHub Copilot indices (if needed)
+.vs/Copilot/      # Exclude the Copilot folder specifically, though already covered by .vs/
+.vs/*.db          # Exclude any database files
 
 # Build results
 [Dd]ebug/
