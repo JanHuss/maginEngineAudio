@@ -54,7 +54,13 @@ void loadAudio(const char* filename, // name of audio file
             return;
 	}
 
-	totalFrames = ma_decoder_get_length_in_pcm_frames(&decoder, &totalFrames); // get the total number of frames in the audio file
+	if (result = ma_decoder_get_length_in_pcm_frames(&decoder, &totalFrames)) // get the total number of frames in the audio file
+    {
+        std::cerr << "Failed to initialize audio file: " << filename 
+              << ". Error code: " << result << std::endl;
+            return;
+    }
+
 	channels = decoder.outputChannels; // set channels to the number of channels in the audio file
 	sampleRate = decoder.outputSampleRate; // set sample rate to the audio file's sample rate
 
@@ -169,7 +175,7 @@ int main(void)
 		ma_uint32 sampleRate = 0;
 
 		// Load audio file
-		const char* fileName = "assets\audio\BigWave.wav"; // set file path here
+		const char* fileName = "assets/audio/BigWave.wav"; // set file path here
 		loadAudio(fileName, audioData, totalFrames, channels, sampleRate);
 		// Check if audio file loaded successfully
 		if (!audioData.empty())
