@@ -11,7 +11,7 @@
 .vs/AudioEngine/CopilotIndices/              # Exclude the Copilot folder
 .vs/AudioEngine/FileContextIndex/
 .vs/AudioEngine/v17/ipch/
-.vs/AudioEngine/*.db                  # Exclude any database files
+
 
 # Build results
 [Dd]ebug/
