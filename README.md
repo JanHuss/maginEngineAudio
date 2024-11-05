@@ -27,10 +27,10 @@ An amazing opportunity arose in which I could build this project for two modules
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/)
 
 ## Notes on when cloning the repo
-After the repo has been cloned to the device, Visual Studio will potentially flag PortAudio Errors. This is because the line in the linker properties keeps removing itself. Will try and figure out this solution to keep it in but for now paste the following into `Properties -> Linker -> General -> Additional Library Directories`: 
-```..\..\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio_x64.lib```
-and a similar path in `Properties -> Linker -> General -> Include directories`:
-```..\..\portaudio-master\portaudio-master\include```
+After the repo has been cloned to the device, Visual Studio will potentially flag PortAudio Errors. This is because the line in the linker properties keeps removing itself. Will try and figure out this solution to keep it in but for now paste the following into `Properties -> Linker -> General -> Additional Library Directories`: <br>
+```..\..\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio_x64.lib```<br>
+and a similar path in `Properties -> Linker -> General -> Include directories`:<br>
+```..\..\portaudio-master\portaudio-master\include```<br>
 
 This should remove the errors
 
