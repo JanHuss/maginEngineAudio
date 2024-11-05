@@ -10,9 +10,9 @@
 ## Background
 A bucket list and honours project developed and engineered by Jan Huss
 
-For a few years, I have been toying with the thought of building an audio engine. It sounds like an ambitious and daunting tasks just by saying it out loud. But people need to continue understanding an audio engine's architecture and structure so that we can continue making awesome tools for the sound creators!
+For a few years, I have been toying with the thought of building an audio engine. It sounds like an ambitious and daunting tasks just by saying it out loud. But people need to continue understanding an audio engine's architecture and structure so that we can continue making awesome tools for sound creators!
 
-After winning Dare Academy 2023, 3 friends and I decided to form a company to continue the development of our award winning game **"Book of Abominations"**. And I thought to myself..."What if I could build an audio engine and replace it with the FMOD Studio engine we currently have in place?...."
+After winning Dare Academy 2023, 3 friends and I decided to form a company to continue the development of our award-winning game **"Book of Abominations"**. And I thought to myself..."What if I could build an audio engine and replace it with the FMOD Studio engine we currently have in place?...."
 
 ## Project goals
 An amazing opportunity arose in which I could build this project for two modules while keeping two goals in mind: 
@@ -25,6 +25,14 @@ An amazing opportunity arose in which I could build this project for two modules
 - Added PortAudio and MiniAudio libraries to the project. Played around with the engine layout and can play back basic sine and saw waveforms
 - Created structure diagram to help me keep track of the engine architecture<br>
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/)
+
+## Notes on when cloning the repo
+After the repo has been cloned to the device, Visual Studio will potentially flag PortAudio Errors. This is because the line in the linker properties keeps removing itself. Will try and figure out this solution to keep it in but for now paste the following into `Properties -> Linker -> General -> Additional Library Directories`: 
+```..\..\portaudio-master\portaudio-master\msvc\x64\Debug\portaudio_x64.lib```
+and a similar path in `Properties -> Linker -> General -> Include directories`:
+```..\..\portaudio-master\portaudio-master\include```
+
+This should remove the errors
 
 ## Libraries used
 - [PortAudio](https://www.portaudio.com/): Audio Playback
