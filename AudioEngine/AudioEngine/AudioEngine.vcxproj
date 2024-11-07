@@ -151,9 +151,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioEngineInterface.cpp" />
     <ClCompile Include="AudioThread.cpp" />
+    <ClCompile Include="BitCrush.cpp" />
+    <ClCompile Include="Budget.cpp" />
+    <ClCompile Include="BufferManager.cpp" />
+    <ClCompile Include="Delay.cpp" />
+    <ClCompile Include="EffectBase.cpp" />
+    <ClCompile Include="EffectChain.cpp" />
+    <ClCompile Include="EffectManager.cpp" />
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="EngineBase.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="EventBase.cpp" />
+    <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
@@ -163,15 +174,29 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Voice.cpp" />
+    <ClCompile Include="VoiceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioEngineInterface.h" />
     <ClInclude Include="AudioThread.h" />
+    <ClInclude Include="BitCrush.h" />
+    <ClInclude Include="Budget.h" />
+    <ClInclude Include="BufferManager.h" />
+    <ClInclude Include="Delay.h" />
     <ClInclude Include="dependencies\include\glad\glad.h" />
     <ClInclude Include="dependencies\include\GLFW\glfw3.h" />
     <ClInclude Include="dependencies\include\GLFW\glfw3native.h" />
     <ClInclude Include="dependencies\include\KHR\khrplatform.h" />
+    <ClInclude Include="EffectBase.h" />
+    <ClInclude Include="EffectChain.h" />
+    <ClInclude Include="EffectManager.h" />
+    <ClInclude Include="Engine.h" />
     <ClInclude Include="EngineBase.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="EventBase.h" />
+    <ClInclude Include="EventManager.h" />
     <ClInclude Include="imgui\imconfig.h" />
     <ClInclude Include="imgui\imgui.h" />
     <ClInclude Include="imgui\imgui_impl_glfw.h" />
@@ -182,6 +207,9 @@
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="miniaudio.h" />
+    <ClInclude Include="UI.h" />
+    <ClInclude Include="Voice.h" />
+    <ClInclude Include="VoiceManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui.ini" />

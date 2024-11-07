@@ -13,43 +13,76 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\imgui">
-      <UniqueIdentifier>{6ca9d9f3-1570-4b76-af5e-ff289afcdb6c}</UniqueIdentifier>
+    <Filter Include="Header Files\EngineCore">
+      <UniqueIdentifier>{3c596fad-1f9e-4a42-b075-73a2589b0a4c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\imgui">
+    <Filter Include="Source Files\EngineCore">
+      <UniqueIdentifier>{558594c9-80ed-4380-a260-7a5e83e892bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EffectEngine">
+      <UniqueIdentifier>{c30dcd7c-cd5b-4bac-a786-4b6d58fafa3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EffectEngine">
+      <UniqueIdentifier>{71fc083c-b03f-45b6-b73b-f84c565375ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Libraries">
+      <UniqueIdentifier>{e40fd626-dc29-4af4-959a-dac3ef5fbbda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{52398311-5c56-4dcd-98af-59ba2b3960b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\imgui">
       <UniqueIdentifier>{332d3000-d2d7-4152-b1c6-c22f08ac89a5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\MiniAudio">
+    <Filter Include="Header Files\Libraries\imgui">
+      <UniqueIdentifier>{6ca9d9f3-1570-4b76-af5e-ff289afcdb6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Libraries\MiniAudio">
       <UniqueIdentifier>{eb021da2-3dde-4d1f-b957-9b05a62ec086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EngineCore\Profiling">
+      <UniqueIdentifier>{42dc6d95-a9a7-4b2e-ae46-6195f2c37410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EngineCore\Profiling">
+      <UniqueIdentifier>{504a1865-6e97-449e-8bde-ace5a71f8b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EngineCore\UI">
+      <UniqueIdentifier>{bc9f6633-f5f0-4261-96ed-20b87b47f79c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EngineCore\UI">
+      <UniqueIdentifier>{d598dd7c-46e1-44d0-a3ef-8a8d1b223e6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EffectEngine\Effects">
+      <UniqueIdentifier>{7fcd327a-25e5-4faf-91ed-e246ee444c58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EffectEngine\Effects">
+      <UniqueIdentifier>{30ce5112-5a8f-47f4-aa16-3dfda5531702}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="glad.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="imgui\imgui.cpp">
-      <Filter>Source Files\imgui</Filter>
+      <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
     <ClCompile Include="imgui\imgui_demo.cpp">
-      <Filter>Source Files\imgui</Filter>
+      <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
     <ClCompile Include="imgui\imgui_draw.cpp">
-      <Filter>Source Files\imgui</Filter>
+      <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
     <ClCompile Include="imgui\imgui_impl_glfw.cpp">
-      <Filter>Source Files\imgui</Filter>
+      <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
     <ClCompile Include="imgui\imgui_impl_opengl3.cpp">
-      <Filter>Source Files\imgui</Filter>
+      <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
     <ClCompile Include="imgui\imgui_tables.cpp">
-      <Filter>Source Files\imgui</Filter>
+      <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
     <ClCompile Include="imgui\imgui_widgets.cpp">
-      <Filter>Source Files\imgui</Filter>
+      <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
     <ClCompile Include="EventBase.cpp">
       <Filter>Source Files</Filter>
@@ -60,46 +93,79 @@
     <ClCompile Include="AudioThread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source Files\EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Source Files\EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Source Files\EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="VoiceManager.cpp">
+      <Filter>Source Files\EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="Voice.cpp">
+      <Filter>Source Files\EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferManager.cpp">
+      <Filter>Source Files\EngineCore</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Source Files\EngineCore\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioEngineInterface.cpp">
+      <Filter>Source Files\EngineCore\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Budget.cpp">
+      <Filter>Source Files\EngineCore\Profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>Source Files\EffectEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectBase.cpp">
+      <Filter>Source Files\EffectEngine\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Delay.cpp">
+      <Filter>Source Files\EffectEngine\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="BitCrush.cpp">
+      <Filter>Source Files\EffectEngine\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectChain.cpp">
+      <Filter>Source Files\EffectEngine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dependencies\include\GLFW\glfw3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\GLFW\glfw3native.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\glad\glad.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dependencies\include\KHR\khrplatform.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="imgui\imconfig.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui_impl_glfw.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui_impl_opengl3.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui_impl_opengl3_loader.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imgui_internal.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imstb_rectpack.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imstb_textedit.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="imgui\imstb_truetype.h">
-      <Filter>Header Files\imgui</Filter>
+      <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="EventBase.h">
       <Filter>Header Files</Filter>
@@ -111,10 +177,66 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="miniaudio.h">
-      <Filter>Header Files\MiniAudio</Filter>
+      <Filter>Header Files\Libraries\MiniAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\glad\glad.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\GLFW\glfw3.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\GLFW\glfw3native.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\include\KHR\khrplatform.h">
+      <Filter>Header Files\Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Header Files\EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Header Files\EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>Header Files\EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="VoiceManager.h">
+      <Filter>Header Files\EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="Voice.h">
+      <Filter>Header Files\EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferManager.h">
+      <Filter>Header Files\EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>Header Files\EngineCore\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioEngineInterface.h">
+      <Filter>Header Files\EngineCore\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Budget.h">
+      <Filter>Header Files\EngineCore\Profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.h">
+      <Filter>Header Files\EffectEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectBase.h">
+      <Filter>Header Files\EffectEngine\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Delay.h">
+      <Filter>Header Files\EffectEngine\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="BitCrush.h">
+      <Filter>Header Files\EffectEngine\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectChain.h">
+      <Filter>Header Files\EffectEngine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="imgui.ini" />
+    <None Include="imgui.ini">
+      <Filter>Source Files\Libraries</Filter>
+    </None>
   </ItemGroup>
 </Project>
