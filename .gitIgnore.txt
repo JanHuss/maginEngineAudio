@@ -7,11 +7,6 @@
 *.userprefs
 *.sln.ide
 
-# GitHub Copilot and FileContextIndex
-.vs/AudioEngine/CopilotIndices/  	# Exclude CopilotIndices folder at specified path
-.vs/AudioEngine/FileContextIndex/ 	# Exclude FileContextIndex folder at specified path
-.vs/AudioEngine/v17/ipch/ 		# Exclude intermediate precompiled header files
-
 # Build results
 [Dd]ebug/
 [Rr]elease/
