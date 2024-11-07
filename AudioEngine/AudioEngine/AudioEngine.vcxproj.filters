@@ -138,6 +138,9 @@
     <ClCompile Include="EffectChain.cpp">
       <Filter>Source Files\EffectEngine</Filter>
     </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Source Files\EngineCore</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h">
@@ -232,6 +235,9 @@
     </ClInclude>
     <ClInclude Include="EffectChain.h">
       <Filter>Header Files\EffectEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>Header Files\EngineCore</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

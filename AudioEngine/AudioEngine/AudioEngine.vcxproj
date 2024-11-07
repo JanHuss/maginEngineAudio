@@ -156,6 +156,7 @@
     <ClCompile Include="BitCrush.cpp" />
     <ClCompile Include="Budget.cpp" />
     <ClCompile Include="BufferManager.cpp" />
+    <ClCompile Include="DataManager.cpp" />
     <ClCompile Include="Delay.cpp" />
     <ClCompile Include="EffectBase.cpp" />
     <ClCompile Include="EffectChain.cpp" />
@@ -184,6 +185,7 @@
     <ClInclude Include="BitCrush.h" />
     <ClInclude Include="Budget.h" />
     <ClInclude Include="BufferManager.h" />
+    <ClInclude Include="DataManager.h" />
     <ClInclude Include="Delay.h" />
     <ClInclude Include="dependencies\include\glad\glad.h" />
     <ClInclude Include="dependencies\include\GLFW\glfw3.h" />
