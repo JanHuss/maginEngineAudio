@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -87,13 +87,17 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EffectChain.h",
               "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectChain.h",
               "RelativeDocumentMoniker": "AudioEngine\\EffectChain.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectChain.h*",
-              "RelativeToolTip": "AudioEngine\\EffectChain.h*",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectChain.h",
+              "RelativeToolTip": "AudioEngine\\EffectChain.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-07T10:25:57.582Z",
@@ -105,8 +109,8 @@
               "Title": "BitCrush.h",
               "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\BitCrush.h",
               "RelativeDocumentMoniker": "AudioEngine\\BitCrush.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\BitCrush.h*",
-              "RelativeToolTip": "AudioEngine\\BitCrush.h*",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\BitCrush.h",
+              "RelativeToolTip": "AudioEngine\\BitCrush.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-07T10:24:27.693Z",
@@ -118,8 +122,8 @@
               "Title": "Delay.h",
               "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Delay.h",
               "RelativeDocumentMoniker": "AudioEngine\\Delay.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Delay.h*",
-              "RelativeToolTip": "AudioEngine\\Delay.h*",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Delay.h",
+              "RelativeToolTip": "AudioEngine\\Delay.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-07T10:23:53.288Z",
@@ -131,8 +135,8 @@
               "Title": "EffectBase.h",
               "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectBase.h",
               "RelativeDocumentMoniker": "AudioEngine\\EffectBase.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectBase.h*",
-              "RelativeToolTip": "AudioEngine\\EffectBase.h*",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectBase.h",
+              "RelativeToolTip": "AudioEngine\\EffectBase.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-07T10:16:14.476Z",
@@ -144,16 +148,12 @@
               "Title": "EffectManager.h",
               "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectManager.h",
               "RelativeDocumentMoniker": "AudioEngine\\EffectManager.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectManager.h*",
-              "RelativeToolTip": "AudioEngine\\EffectManager.h*",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\EffectManager.h",
+              "RelativeToolTip": "AudioEngine\\EffectManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-07T10:15:18.236Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",

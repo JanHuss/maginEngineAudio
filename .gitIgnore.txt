@@ -1,13 +1,6 @@
 # Visual Studio specific files
 .vs/                       # Exclude the entire .vs folder
 
-# Include specific files in the v17 folder
-!.vs/AudioEngine/v17/.suo
-!.vs/AudioEngine/v17/Browse.VC
-!.vs/AudioEngine/v17/DocumentLayout.backup.json
-!.vs/AudioEngine/v17/DocumentLayout.json
-!.vs/AudioEngine/v17/Solution.VC
-
 # Exclude other Visual Studio-specific files
 *.suo
 *.user
