@@ -1,9 +1,2 @@
-﻿  Engine.cpp
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(76,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(81,27): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  main.cpp
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\main.cpp(113,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\main.cpp(114,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(36,1): warning C4715: 'Engine::init': not all control paths return a value
+﻿  main.cpp
   AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe
