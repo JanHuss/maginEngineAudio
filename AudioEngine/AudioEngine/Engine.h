@@ -3,7 +3,10 @@
 #include "imgui.h"
 #include "iostream"
 #include "vector"
-#include "EventBase.h"
+#include "Event.h"
+#include <portaudio.h>
+
+#include "miniaudio.h"
 
 /// <Engine Core Summary>
 /// ==========================================================
@@ -20,16 +23,31 @@
 /// ==========================================================
 /// </Engine Core Summary>
 
+enum EngineStatus
+{
+	Success = 0,
+	GeneralFailure = -1,
+	InitialisationError = -2
+};
+
+// create test wave. I'm keeping this just in case ------------------------------
+typedef struct {
+    float left_phase;
+    float right_phase;
+} paTestData;
+
 class Engine
 {
 public:
 	Engine();
 	~Engine();
 
+	int init();
+	int run();
 	void update();
 	void render();
 
 private:
-	std::vector<class EventBase> events;
+	std::vector<class Event> events;
 };
 

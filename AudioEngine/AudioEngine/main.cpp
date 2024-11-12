@@ -3,16 +3,15 @@
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 
-#include <portaudio.h>
+//#include <portaudio.h>
 #include <stdio.h>
 #define MINIAUDIO_IMPLEMENTATION
-#include "miniaudio.h"
+//#include "miniaudio.h"
 #include <math.h>
 #include <iostream>
 #include <vector>
 
 #include "Engine.h"
-#include "EventBase.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -90,11 +89,11 @@ void loadAudio(const char* filename, // name of audio file
 }
 
 	
-// create test wave. I'm keeping this just in case ------------------------------
-typedef struct {
-    float left_phase;
-    float right_phase;
-} paTestData;
+//// create test wave. I'm keeping this just in case ------------------------------
+//typedef struct {
+//    float left_phase;
+//    float right_phase;
+//} paTestData;
 
 static int paWaveCallback(const void *inputBuffer, void *outputBuffer,
                           unsigned long framesPerBuffer,
@@ -147,26 +146,27 @@ int main(void)
     {   
 		// Initialise EventBase class. This will change and be initialised in a future application class
 		Engine engine; 
-
+        engine.init();
+        engine.run(); // needs to be moved into while loop when code has been moved to Engine
 	    // PortAudio initialization and test ----------------------------------------------------------
-        PaError err = Pa_Initialize();
-        paTestData data = { 0 };  // Initialize phase data for the sine wave
+        //PaError err = Pa_Initialize();
+        //paTestData data = { 0 };  // Initialize phase data for the sine wave
+        //
+        //
+        //if (err != paNoError) {
+        //    std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
+        //    return -1;
+        //}
+		//std::cout << "- Library check ---------------------------------------------------" << std::endl;
+        //std::cout << "PortAudio initialized successfully!" << std::endl;
+        //
+		//// Display PortAudio version
+		//std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
 
-
-        if (err != paNoError) {
-            std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
-            return -1;
-        }
-		std::cout << "- Library check ---------------------------------------------------" << std::endl;
-        std::cout << "PortAudio initialized successfully!" << std::endl;
-
-		// Display PortAudio version
-		std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
-
-        // MiniAudio message
-		std::cout << "MiniAudio installed" << std::endl;
-		std::cout << "MiniAudio version: " << MA_VERSION_STRING << std::endl;
-		std::cout << "-------------------------------------------------------------------\n" << std::endl;
+        //// MiniAudio message
+		//std::cout << "MiniAudio installed" << std::endl;
+		//std::cout << "MiniAudio version: " << MA_VERSION_STRING << std::endl;
+		//std::cout << "-------------------------------------------------------------------\n" << std::endl;
         
 		// Create audio data variables
 		std::vector<float> audioData;

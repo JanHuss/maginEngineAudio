@@ -1,4 +1,6 @@
 #pragma once
+#include "imgui.h"
+#include "iostream"
 
 /// <Event Summary>
 /// ==========================================================
@@ -13,5 +15,15 @@
 
 class Event
 {
+	private:
+	int eventID;
+	std::string eventName;
+
+public:
+	Event(int iD, std::string evNa);
+	~Event();
+
+	void update();
+	void render();
 };
 

@@ -84,9 +84,6 @@
     <ClCompile Include="imgui\imgui_widgets.cpp">
       <Filter>Source Files\Libraries\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="EventBase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>Source Files\Libraries</Filter>
     </ClCompile>
@@ -163,9 +160,6 @@
     </ClInclude>
     <ClInclude Include="imgui\imstb_truetype.h">
       <Filter>Header Files\Libraries\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="EventBase.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="miniaudio.h">
       <Filter>Header Files\Libraries\MiniAudio</Filter>

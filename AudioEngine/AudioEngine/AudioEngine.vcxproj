@@ -162,7 +162,6 @@
     <ClCompile Include="EffectManager.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Event.cpp" />
-    <ClCompile Include="EventBase.cpp" />
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="imgui\imgui.cpp" />
@@ -193,7 +192,6 @@
     <ClInclude Include="EffectManager.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Event.h" />
-    <ClInclude Include="EventBase.h" />
     <ClInclude Include="EventManager.h" />
     <ClInclude Include="imgui\imconfig.h" />
     <ClInclude Include="imgui\imgui.h" />
