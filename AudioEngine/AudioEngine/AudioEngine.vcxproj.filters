@@ -87,12 +87,6 @@
     <ClCompile Include="EventBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EngineBase.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AudioThread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="glad.c">
       <Filter>Source Files\Libraries</Filter>
     </ClCompile>
@@ -171,12 +165,6 @@
       <Filter>Header Files\Libraries\imgui</Filter>
     </ClInclude>
     <ClInclude Include="EventBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EngineBase.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AudioThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="miniaudio.h">

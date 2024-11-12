@@ -1,5 +1,10 @@
 #pragma once
 
+#include "imgui.h"
+#include "iostream"
+#include "vector"
+#include "EventBase.h"
+
 /// <Engine Core Summary>
 /// ==========================================================
 /// This class holds the entire audio engine together.
@@ -17,5 +22,14 @@
 
 class Engine
 {
+public:
+	Engine();
+	~Engine();
+
+	void update();
+	void render();
+
+private:
+	std::vector<class EventBase> events;
 };
 

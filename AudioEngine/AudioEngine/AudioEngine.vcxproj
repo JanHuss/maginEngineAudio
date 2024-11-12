@@ -152,7 +152,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AudioEngineInterface.cpp" />
-    <ClCompile Include="AudioThread.cpp" />
     <ClCompile Include="BitCrush.cpp" />
     <ClCompile Include="Budget.cpp" />
     <ClCompile Include="BufferManager.cpp" />
@@ -162,7 +161,6 @@
     <ClCompile Include="EffectChain.cpp" />
     <ClCompile Include="EffectManager.cpp" />
     <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="EngineBase.cpp" />
     <ClCompile Include="Event.cpp" />
     <ClCompile Include="EventBase.cpp" />
     <ClCompile Include="EventManager.cpp" />
@@ -181,7 +179,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioEngineInterface.h" />
-    <ClInclude Include="AudioThread.h" />
     <ClInclude Include="BitCrush.h" />
     <ClInclude Include="Budget.h" />
     <ClInclude Include="BufferManager.h" />
@@ -195,7 +192,6 @@
     <ClInclude Include="EffectChain.h" />
     <ClInclude Include="EffectManager.h" />
     <ClInclude Include="Engine.h" />
-    <ClInclude Include="EngineBase.h" />
     <ClInclude Include="Event.h" />
     <ClInclude Include="EventBase.h" />
     <ClInclude Include="EventManager.h" />

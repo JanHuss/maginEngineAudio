@@ -11,7 +11,7 @@
 #include <iostream>
 #include <vector>
 
-#include "EngineBase.h"
+#include "Engine.h"
 #include "EventBase.h"
 
 #include <glad/glad.h>
@@ -146,7 +146,7 @@ int main(void)
 		// VERY new to this method but I find it interesting and useful for error handling
     {   
 		// Initialise EventBase class. This will change and be initialised in a future application class
-		EngineBase engine; 
+		Engine engine; 
 
 	    // PortAudio initialization and test ----------------------------------------------------------
         PaError err = Pa_Initialize();
@@ -248,7 +248,7 @@ int main(void)
             ImGui_ImplGlfw_NewFrame();
             ImGui::NewFrame();
 
-			engine.Render(); // core application
+			engine.render(); // core application
 
             //ImGui::ShowDemoWindow(); // Show demo window! :)
             ImGui::Render();
