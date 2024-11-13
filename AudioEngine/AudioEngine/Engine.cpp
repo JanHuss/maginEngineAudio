@@ -2,46 +2,39 @@
 
 Engine::Engine()
 {
-	// Pointer initialisation
+    // initialise libraries, classes and parameters
+    init();
 	
+    // Pointer initialisation
+	uI = new UI();
+    eventManager = new EventManager(uI);
 
 	// Initialise audio data variables
     totalFrames = 0;
 	channels = 0;
 	sampleRate = 0;
+    std::cout << "Engine Constructor - uiPtr: " << uI << std::endl;
 }
 
 Engine::~Engine()
 {
+   uI = nullptr;
+   delete uI;
+   
+   eventManager = nullptr;
+   delete eventManager;
 }
 
-int Engine::init()
+void Engine::init()
 {
 	std::cout << "Engine Init function called\n" << std::endl;
 
 	// PortAudio Initialise
-	PaError err = Pa_Initialize();
-    paTestData data = { 0 };  // Initialize phase data for the sine wave
-
-
-    if (err != paNoError) {
-        std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
-        return InitialisationError;
-    }
-	std::cout << "- Library check ---------------------------------------------------" << std::endl;
-    std::cout << "PortAudio initialized successfully!" << std::endl;
-
-	// Display PortAudio version
-	std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
-
-
+	portAudioInitialise();
 	// MiniAudio Initialise
-	// MiniAudio message
-	std::cout << "MiniAudio installed" << std::endl;
-	std::cout << "MiniAudio version: " << MA_VERSION_STRING << std::endl;
-	std::cout << "-------------------------------------------------------------------\n" << std::endl;
+    miniAudioInitialise();
 
-	// Load audio file
+	// Load audio file. should move to resource loading class
 	const char* fileName = "assets/audio/BigWave.wav"; // set file path here
 	loadAudio(fileName, audioData, totalFrames, channels, sampleRate);
 
@@ -53,63 +46,33 @@ int Engine::init()
         std::cout << "Sample rate in engine: " << sampleRate << std::endl;
     }
 
-	// GLFW initialization and test ---------------------------------------------------------------
+	// GLFW initialise
+    glfwInitialise();
+	// Dear ImGui initialise
+	imguiInitialise();
 
-    // Initialize the library 
-    if (!glfwInit())
-        return InitialisationError;
-
-    // Create a windowed mode window and its OpenGL context
-    window = glfwCreateWindow(640, 480, "Audio Engine", NULL, NULL);
-    if (!window)
-    {
-        glfwTerminate();
-        return InitialisationError;
-    }
-
-    // Make the window's context current
-    glfwMakeContextCurrent(window);
-   
-	gladLoadGL();
-
-	glViewport(0, 0, 640, 480);
-
-	glClear(GL_COLOR_BUFFER_BIT);
-	glfwSwapBuffers(window);
-
-	// Dear ImGui initialization ------------------------------------------------------------------
-	IMGUI_CHECKVERSION();
-	ImGui::CreateContext();
-	ImGuiIO& io = ImGui::GetIO(); (void)io;
-	ImGui::StyleColorsDark();
-	ImGui_ImplGlfw_InitForOpenGL(window, true);
-    ImGui_ImplOpenGL3_Init("#version 330");
+    // EventManager initialise
+    //eventManager->init();
 }
 
 int Engine::run()
 {
     try // try block for error handling - if an error occurs, the catch block will be executed
 		// VERY new to this method but I find it interesting and useful for error handling
-    {   
-		init();
-
-	std::cout << "Engine Run function called\n" << std::endl;
-
-	while (!glfwWindowShouldClose(window))
+    {  
+    std::cout << "----------------------------------" << std::endl;
+	std::cout << "Calling Engine.run()" << std::endl;
+	std::cout << "----------------------------------" << std::endl;
+    // Loop that displays all UI information and allows for changes to parameters during runtime
+	while (!glfwWindowShouldClose(window)) 
     {
-	    glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
-        // Render here
+	    glClearColor(0.07f, 0.13f, 0.17f, 1.0f); // sets window colour. not important really
         glClear(GL_COLOR_BUFFER_BIT);
-        ImGui_ImplOpenGL3_NewFrame();
-        ImGui_ImplGlfw_NewFrame();
-        ImGui::NewFrame();
-
-		render(); // core application
-
-        //ImGui::ShowDemoWindow(); // Show demo window! :)
-        ImGui::Render();
-        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-	
+        // Update functions here. pass through delta time as dt if needed
+        
+        // Render here
+		uI->renderEngineFrame(); 	
+        eventManager->render();
 
         // Swap front and back buffers
         glfwSwapBuffers(window);
@@ -151,49 +114,65 @@ int Engine::run()
 	
 }
 
-void Engine::update()
+int Engine::portAudioInitialise()
 {
+    // PortAudio Initialise
+	PaError err = Pa_Initialize();
+    paTestData data = { 0 };  // Initialize phase data for the sine wave
+
+
+    if (err != paNoError) {
+        std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
+        return InitialisationError;
+    }
+	std::cout << "- Library check ---------------------------------------------------" << std::endl;
+    std::cout << "PortAudio initialized successfully!" << std::endl;
+
+	// Display PortAudio version
+	std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
 }
 
-void Engine::render()
+void Engine::miniAudioInitialise()
 {
-	// variables
-	std::string eventName;
+    // MiniAudio message
+	std::cout << "MiniAudio installed" << std::endl;
+	std::cout << "MiniAudio version: " << MA_VERSION_STRING << std::endl;
+	std::cout << "-------------------------------------------------------------------\n" << std::endl;
+}
 
-	// Engine Frame
-	ImGui::Begin("Engine"); // shouldn't be able to see the title bar
-	ImGui::SetWindowSize(ImVec2(640, 500));
-	ImGui::SetWindowPos(ImVec2(0, -20)); // hide the title bar with a negative y value
-	ImGui::Text("Build Event here");
-	// Buttons for the engine frame here -----------------------------------------------------
+int Engine::glfwInitialise()
+{
+    // Initialize the library 
+    if (!glfwInit())
+        return InitialisationError;
 
-    // Adding Events to vector when button is pressed ----------------------------------------
-	// This is probably a way to add events when the user can save and close the application
-	
-	//if(ImGui::Button("Add Event"))
-	//{
-	//	// quick and dirty way to add event names
-    //    //std::cin >> eventName;
-	//	// Add event to engine frame
-	//	events.push_back(Event(events.size(), eventName));
-	//	//std::cout << "Amount of events called: " << events.size() << std::endl;
-	//}
-	 
-	// --------------------------------------------------------------------------------------
-	// for testing one event frame
-		if (events.size() < 1)
-            events.push_back(Event(events.size(), eventName));
-    if (!events.empty()) 
+    // Create a windowed mode window and its OpenGL context
+    window = glfwCreateWindow(640, 480, "Audio Engine", NULL, NULL);
+    if (!window)
     {
-        for (int i = 0; i < events.size(); i++)
-        {
-			ImVec2 position(10, 30 + i * 150);
-	        events[i].render();
-        }
+        glfwTerminate();
+        return InitialisationError;
     }
-    // --------------------------------------------------------------------------------------
 
-	ImGui::End();
+    // Make the window's context current
+    glfwMakeContextCurrent(window);
+   
+	gladLoadGL();
+
+	glViewport(0, 0, 640, 480);
+
+	glClear(GL_COLOR_BUFFER_BIT);
+	glfwSwapBuffers(window);
+}
+
+void Engine::imguiInitialise()
+{
+    IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGuiIO& io = ImGui::GetIO(); (void)io;
+	ImGui::StyleColorsDark();
+	ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init("#version 330");
 }
 
 // This needs to be removed and replaced with a class that will handle the audio callback ---------

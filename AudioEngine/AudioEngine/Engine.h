@@ -4,17 +4,22 @@
 #define M_PI 3.14159265358979323846
 #endif
 
+// might be able to be removed if imgui has been moved to UI class---
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
+// ------
 
 #include "iostream"
 #include "vector"
-#include "Event.h"
 #include <portaudio.h>
 #include <cmath>
 
 #include "miniaudio.h"
+
+#include "EventManager.h"
+#include "Event.h"
+#include "UI.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -61,10 +66,14 @@ public:
 	Engine();
 	~Engine();
 
-	int init();
+	void init();
 	int run();
-	void update();
-	void render();
+
+	// init functions
+	int portAudioInitialise();
+	void miniAudioInitialise();
+	int glfwInitialise();
+	void imguiInitialise();
 
 	// functions that need to be moved to other classes
 	void loadAudio(const char* filename, // name of audio file
@@ -82,8 +91,8 @@ public:
 private:
 	// Pointers
 	GLFWwindow* window;
-
-	std::vector<class Event> events;
+	UI* uI;
+	EventManager* eventManager;
 
 	// Create audio data variables
 	std::vector<float> audioData;

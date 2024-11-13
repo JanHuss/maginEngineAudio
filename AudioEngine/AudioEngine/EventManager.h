@@ -1,5 +1,11 @@
 #pragma once
 
+#include <string>
+#include <vector>
+
+#include "Event.h"
+#include "UI.h"
+
 /// <Event Manager Summary>
 /// ==========================================================
 /// This class handles the amount of Event classes that can 
@@ -23,5 +29,17 @@
 
 class EventManager
 {
+public:
+	EventManager(UI* ui);
+	~EventManager();
+
+	void init();
+	void render();
+
+private:
+	//std::vector<class Event> events;
+	// Pointers
+	UI* uiPtr;
+	Event* eventssss;
 };
 

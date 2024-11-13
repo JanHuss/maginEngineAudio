@@ -1,5 +1,16 @@
 #pragma once
 
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+//#include "Event.h"
+
+
 /// <UI Summary>
 /// ==========================================================
 /// This class handles all UI parameters when the engine is 
@@ -35,5 +46,18 @@
 
 class UI
 {
+public: 
+	UI();
+	~UI();
+
+	void renderEngineFrame();// contains the frame of the Engine. Global Buttons and other features will be in seperate function
+	void renderEventFrame(); // contains the frame of an Event. Event Buttons and other features will be in seperate function
+	void renderVoiceFrame(); // contains the frame of a Voice. Event Buttons and other features will be in seperate function
+	
+
+private:
+	//std::vector<class Event> events;
+	int eventID;
+	std::string eventName;
 };
 
