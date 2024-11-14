@@ -8,7 +8,9 @@
 #include <string>
 #include <vector>
 
+#include "EventManager.h"
 //#include "Event.h"
+#include "EventFrameUI.h"
 
 
 /// <UI Summary>
@@ -46,18 +48,26 @@
 
 class UI
 {
+private:
+	// std::vector<renderEventFrame()> eventUI;
+	//int eventID;
+	std::string eventName;
+	ImVec2 eventFramePosition;
+	
+	// Pointers
+	EventManager* eventManager;
+	std::vector<class EventFrameUI*> eventFrameUIvec;
+
 public: 
-	UI();
+	UI(EventManager* eventMan);
 	~UI();
 
+	// these functions might have to be contained in their own classes and this class should act as a UIManager
+
 	void renderEngineFrame();// contains the frame of the Engine. Global Buttons and other features will be in seperate function
-	void renderEventFrame(); // contains the frame of an Event. Event Buttons and other features will be in seperate function
+	
 	void renderVoiceFrame(); // contains the frame of a Voice. Event Buttons and other features will be in seperate function
 	
 
-private:
-	//std::vector<class Event> events;
-	int eventID;
-	std::string eventName;
 };
 

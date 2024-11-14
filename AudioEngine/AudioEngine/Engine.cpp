@@ -6,14 +6,14 @@ Engine::Engine()
     init();
 	
     // Pointer initialisation
-	uI = new UI();
-    eventManager = new EventManager(uI);
+    eventManager = new EventManager(/*uI*/);
+	uI = new UI(eventManager);
 
 	// Initialise audio data variables
     totalFrames = 0;
 	channels = 0;
 	sampleRate = 0;
-    std::cout << "Engine Constructor - uiPtr: " << uI << std::endl;
+    //std::cout << "Engine Constructor - uiPtr: " << uI << std::endl;
 }
 
 Engine::~Engine()
@@ -27,7 +27,9 @@ Engine::~Engine()
 
 void Engine::init()
 {
+    std::cout << "-----------------------------" << std::endl;
 	std::cout << "Engine Init function called\n" << std::endl;
+    std::cout << "-----------------------------" << std::endl;
 
 	// PortAudio Initialise
 	portAudioInitialise();

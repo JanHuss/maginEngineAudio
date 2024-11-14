@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "Event.h"
-#include "UI.h"
+//#include "UI.h"
 
 /// <Event Manager Summary>
 /// ==========================================================
@@ -30,16 +30,22 @@
 class EventManager
 {
 public:
-	EventManager(UI* ui);
+	EventManager(/*UI* ui*/);
 	~EventManager();
 
 	void init();
 	void render();
 
+	// Setters
+
+	// Getters
+	std::vector<class Event*> getEvents(); // this will contain a vector of events rather than an instance. make sure that it's a vector of event pointers
+
 private:
 	//std::vector<class Event> events;
 	// Pointers
-	UI* uiPtr;
-	Event* eventssss;
+	//UI* uiPtr;
+	int maxEventsAllowed;
+	std::vector<class Event*> events;
 };
 

@@ -132,6 +132,9 @@
     <ClCompile Include="DataManager.cpp">
       <Filter>Source Files\EngineCore</Filter>
     </ClCompile>
+    <ClCompile Include="EventFrameUI.cpp">
+      <Filter>Source Files\EngineCore\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h">
@@ -220,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="DataManager.h">
       <Filter>Header Files\EngineCore</Filter>
+    </ClInclude>
+    <ClInclude Include="EventFrameUI.h">
+      <Filter>Header Files\EngineCore\UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

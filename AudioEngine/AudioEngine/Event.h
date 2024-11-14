@@ -1,7 +1,7 @@
 #pragma once
 #include "iostream"
 
-#include "UI.h"
+//#include "UI.h"
 
 /// <Event Summary>
 /// ==========================================================
@@ -17,7 +17,7 @@
 class Event
 {
 public:
-	Event(UI* ui);
+	Event(/*UI* ui*/);
 	~Event();
 
 	void update();
@@ -25,7 +25,7 @@ public:
 
 private:
 	// Pointers
-	UI* uiPtr;
+	//UI* uiPtr;
 
 	int eventID;
 	std::string eventName;

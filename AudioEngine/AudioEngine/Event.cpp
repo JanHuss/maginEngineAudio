@@ -1,11 +1,11 @@
 #include "Event.h"
 
-Event::Event(UI* ui): uiPtr(ui)
+Event::Event(/*UI* ui*/)//: uiPtr(ui)
 {
 	// shove the next event down the y axis...
 	// have a delete button in the event frame....
 	eventID = 0;
-	std::cout << "Event Constructor - uiPtr: " << uiPtr << std::endl;
+	//std::cout << "Event Constructor - uiPtr: " << uiPtr << std::endl;
 }
 
 Event::~Event()
@@ -22,6 +22,6 @@ void Event::render()
 	//std::cout << "Calling Event.render()" << std::endl;
 	//std::cout << "----------------------------------" << std::endl;
 
-	if (uiPtr)
-		uiPtr->renderEventFrame();
+	//if (uiPtr)
+	//	uiPtr->renderEventFrame();
 }
