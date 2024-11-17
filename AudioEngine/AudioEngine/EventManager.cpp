@@ -2,15 +2,20 @@
 
 EventManager::EventManager(/*UI* ui*/)//: uiPtr(ui)
 {
-	init();
+	//init();
 	//std::cout << "EventManager Constructor - uiPtr: " << uiPtr << std::endl;
 	// for testing one event frame
 	//if (events.size() < 1)
 		//events.push_back(Event(uiPtr));
-	maxEventsAllowed = 3;
+	maxEventsAllowed = 2;
        
-	for(int i = 0; i<maxEventsAllowed; i++)
+	for(int i = 0; i < maxEventsAllowed; i++)
+	{
 		events.push_back(new Event);
+		events[i]->init();
+	}
+
+	
    
 }
 

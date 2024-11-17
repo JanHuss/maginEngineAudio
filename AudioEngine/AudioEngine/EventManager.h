@@ -29,6 +29,13 @@
 
 class EventManager
 {
+private:
+	//std::vector<class Event> events;
+	// Pointers
+	//UI* uiPtr;
+	int maxEventsAllowed;
+	std::vector<class Event*> events;
+
 public:
 	EventManager(/*UI* ui*/);
 	~EventManager();
@@ -41,11 +48,5 @@ public:
 	// Getters
 	std::vector<class Event*> getEvents(); // this will contain a vector of events rather than an instance. make sure that it's a vector of event pointers
 
-private:
-	//std::vector<class Event> events;
-	// Pointers
-	//UI* uiPtr;
-	int maxEventsAllowed;
-	std::vector<class Event*> events;
 };
 

@@ -6,14 +6,26 @@
 
 #include "iostream"
 
+#include "VoiceFrameUI.h"
+#include "VoiceManager.h"
+#include "EventManager.h"
+
 class EventFrameUI
 {
 private:
-	//int eventID; // this var needs to be removed and replaced with the UI eventFrameVect[i] value
+	int voiceID; // this var needs to be removed and replaced with the UI voiceFrameVect[i] value that still needs to be setup
+
+	//VoiceManager* voiceManager;
+	EventManager* eventManager;
+
 public:
-	EventFrameUI();
+	EventFrameUI(EventManager* eventMan);
 	~EventFrameUI();
 
 	void renderEventFrame(int eventID); // contains the frame of an Event. Event Buttons and other features will be in seperate function
+
+	// Pointers
+	std::vector<class VoiceFrameUI*> voiceFrameUIvec;
+
 };
 

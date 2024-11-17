@@ -8,11 +8,26 @@ UI::UI(EventManager* eventMan) : eventManager(eventMan)
 
 	// the number of event frames that will be set based on the size of the Event manager `events` vector
 	for (int i = 0; i < eventManager->getEvents().size(); i++)
-		eventFrameUIvec.push_back(new EventFrameUI); 
+		eventFrameUIvec.push_back(new EventFrameUI(eventManager)); 
 
 	std::cout << "------------------------------------------------" << std::endl;
 	std::cout << "Current amount of eventframes in UI vector: " << eventFrameUIvec.size() << std::endl;
 	std::cout << "------------------------------------------------" << std::endl;
+
+
+	// not sure about this: 
+	// the voices keep matching the amount of maximum events rather than the maximum value of voices per event.
+	// if I increase the voices then I go out of bounds. 
+	// the below code was originally within the EventFrameUI class constructor but also caused issues. I think 
+	// it needs to be placed back in there but code designed differently
+	//for(int i = 0; i < eventFrameUIvec.size(); i++)
+	//{
+	//	for (int j = 0; j < eventManager->getEvents()[i]->voiceManager->getVoices().size(); j++)
+	//	{
+	//		std::cout << "eventManager->getEvents()["<< i << "]->voiceManager->getVoices().size(): " << eventManager->getEvents()[i]->voiceManager->getVoices().size() << std::endl;
+	//		eventFrameUIvec[j]->voiceFrameUIvec.push_back(new VoiceFrameUI);
+	//	}
+	//}
 }
 
 UI::~UI()
@@ -58,7 +73,8 @@ void UI::renderEngineFrame()
 
 	for (int i = 0; i < eventFrameUIvec.size(); i++)
 	{
-		eventFrameUIvec[0]->renderEventFrame(i); 
+		int eventID = i;
+		eventFrameUIvec[0]->renderEventFrame(eventID);  
 		// move next event frame position down
 		eventFramePosition = ImVec2(10, 30 + i * 150);		
 	}

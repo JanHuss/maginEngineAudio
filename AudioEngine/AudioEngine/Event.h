@@ -2,6 +2,7 @@
 #include "iostream"
 
 //#include "UI.h"
+#include "VoiceManager.h"
 
 /// <Event Summary>
 /// ==========================================================
@@ -16,18 +17,24 @@
 
 class Event
 {
-public:
-	Event(/*UI* ui*/);
-	~Event();
-
-	void update();
-	void render();
-
 private:
 	// Pointers
 	//UI* uiPtr;
 
 	int eventID;
 	std::string eventName;
+
+
+public:
+	Event(/*UI* ui*/);
+	~Event();
+
+	void init();
+	void render();
+
+	VoiceManager* voiceManager;
+	// Getters
+	
+
 };
 

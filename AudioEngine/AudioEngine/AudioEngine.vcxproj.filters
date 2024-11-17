@@ -135,6 +135,9 @@
     <ClCompile Include="EventFrameUI.cpp">
       <Filter>Source Files\EngineCore\UI</Filter>
     </ClCompile>
+    <ClCompile Include="VoiceFrameUI.cpp">
+      <Filter>Source Files\EngineCore\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h">
@@ -225,6 +228,9 @@
       <Filter>Header Files\EngineCore</Filter>
     </ClInclude>
     <ClInclude Include="EventFrameUI.h">
+      <Filter>Header Files\EngineCore\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="VoiceFrameUI.h">
       <Filter>Header Files\EngineCore\UI</Filter>
     </ClInclude>
   </ItemGroup>

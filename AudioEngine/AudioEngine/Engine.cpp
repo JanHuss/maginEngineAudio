@@ -6,8 +6,9 @@ Engine::Engine()
     init();
 	
     // Pointer initialisation
-    eventManager = new EventManager(/*uI*/);
-	uI = new UI(eventManager);
+    eventManager = new EventManager();
+    //voiceManager = new VoiceManager;
+	uI = new UI(eventManager/*, voiceManager*/);
 
 	// Initialise audio data variables
     totalFrames = 0;
@@ -30,6 +31,8 @@ void Engine::init()
     std::cout << "-----------------------------" << std::endl;
 	std::cout << "Engine Init function called\n" << std::endl;
     std::cout << "-----------------------------" << std::endl;
+
+    eventManager->init();
 
 	// PortAudio Initialise
 	portAudioInitialise();

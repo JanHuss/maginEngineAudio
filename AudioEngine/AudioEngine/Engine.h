@@ -20,6 +20,7 @@
 #include "EventManager.h"
 #include "Event.h"
 #include "UI.h"
+#include "VoiceManager.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -93,6 +94,8 @@ private:
 	GLFWwindow* window;
 	UI* uI;
 	EventManager* eventManager;
+	VoiceManager* voiceManager;
+	Voice* voice;
 
 	// Create audio data variables
 	std::vector<float> audioData;

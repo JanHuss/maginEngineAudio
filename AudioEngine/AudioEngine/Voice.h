@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 /// <Voice Summary>
 /// ==========================================================
 /// This class handles the tracking of voice playback 
@@ -28,5 +30,12 @@
 
 class Voice
 {
+private:
+public:
+	Voice();
+	~Voice();
+
+	void init();
+	void render();
 };
 

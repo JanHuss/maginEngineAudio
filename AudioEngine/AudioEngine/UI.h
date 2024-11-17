@@ -11,6 +11,7 @@
 #include "EventManager.h"
 //#include "Event.h"
 #include "EventFrameUI.h"
+//#include "VoiceManager.h"
 
 
 /// <UI Summary>
@@ -57,6 +58,8 @@ private:
 	// Pointers
 	EventManager* eventManager;
 	std::vector<class EventFrameUI*> eventFrameUIvec;
+
+	//VoiceManager* voiceManager;
 
 public: 
 	UI(EventManager* eventMan);

@@ -6,14 +6,22 @@ Event::Event(/*UI* ui*/)//: uiPtr(ui)
 	// have a delete button in the event frame....
 	eventID = 0;
 	//std::cout << "Event Constructor - uiPtr: " << uiPtr << std::endl;
+
+	voiceManager = new VoiceManager;
+
+	//init();
+	voiceManager->init();
 }
 
 Event::~Event()
 {
 }
 
-void Event::update()
+void Event::init()
 {
+	std::cout << "----------------------------------" << std::endl;
+	std::cout << "Calling Event.init()" << std::endl;
+	std::cout << "----------------------------------" << std::endl;
 }
 
 void Event::render()
