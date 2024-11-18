@@ -21,6 +21,7 @@
 #include "Event.h"
 #include "UI.h"
 #include "VoiceManager.h"
+#include "ResourceManager.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -77,11 +78,11 @@ public:
 	void imguiInitialise();
 
 	// functions that need to be moved to other classes
-	void loadAudio(const char* filename, // name of audio file
-					std::vector<float>& audioData, // file's audio data
-					ma_uint64& totalFrames, // total number of frames in the audio file (determines the length of the audio file)
-					ma_uint32& channels, // number of channels the audio file uses
-					ma_uint32& sampleRate); // audio file's sample rate
+	//void loadAudio(const char* filename, // name of audio file
+	//				std::vector<float>& audioData, // file's audio data
+	//				ma_uint64& totalFrames, // total number of frames in the audio file (determines the length of the audio file)
+	//				ma_uint32& channels, // number of channels the audio file uses
+	//				ma_uint32& sampleRate); // audio file's sample rate
 
 	static int paWaveCallback(const void *inputBuffer, void *outputBuffer,
                           unsigned long framesPerBuffer,
@@ -89,18 +90,22 @@ public:
                           PaStreamCallbackFlags statusFlags,
                           void *userData);
 
+	// testloading sounds in engine
+	void loadSound();
+
 private:
 	// Pointers
 	GLFWwindow* window;
 	UI* uI;
 	EventManager* eventManager;
-	VoiceManager* voiceManager;
+	//VoiceManager* voiceManager;
 	Voice* voice;
+	ResourceManager* resourceManager;
 
-	// Create audio data variables
-	std::vector<float> audioData;
-    ma_uint64 totalFrames;
-	ma_uint32 channels;
-	ma_uint32 sampleRate;
+	//// Create audio data variables
+	//std::vector<float> audioData;
+    //ma_uint64 totalFrames;
+	//ma_uint32 channels;
+	//ma_uint32 sampleRate;
 };
 

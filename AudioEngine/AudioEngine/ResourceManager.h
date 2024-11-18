@@ -1,5 +1,9 @@
 #pragma once
 
+#include <map>
+#include <memory>
+#include <string>
+
 #include "AudioAsset.h"
 
 /// <ResourceManager Summary>
@@ -22,11 +26,21 @@
 
 class ResourceManager
 {
-private:
 
 public:
-	ResourceManager();
+	explicit ResourceManager();
 	~ResourceManager();
+	
+	std::shared_ptr<AudioAsset> getAsset(const std::string& assetName);
+	void releaseAsset(const std::string& assetName);
+	void unloadUnusedAssets();
+
+	// Getters
+	
+private:
+	void freeMemory(size_t amount);
+
+	std::map<std::string, std::shared_ptr<AudioAsset>> assetCache;
 
 };
 

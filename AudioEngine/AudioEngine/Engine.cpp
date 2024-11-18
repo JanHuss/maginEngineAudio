@@ -7,14 +7,15 @@ Engine::Engine()
 	
     // Pointer initialisation
     eventManager = new EventManager();
-    //voiceManager = new VoiceManager;
-	uI = new UI(eventManager/*, voiceManager*/);
+	uI = new UI(eventManager);
+    resourceManager = new ResourceManager();
 
-	// Initialise audio data variables
-    totalFrames = 0;
-	channels = 0;
-	sampleRate = 0;
+	//// Initialise audio data variables
+    //totalFrames = 0;
+	//channels = 0;
+	//sampleRate = 0;
     //std::cout << "Engine Constructor - uiPtr: " << uI << std::endl;
+    loadSound();
 }
 
 Engine::~Engine()
@@ -24,6 +25,11 @@ Engine::~Engine()
    
    eventManager = nullptr;
    delete eventManager;
+
+   resourceManager = nullptr;
+   delete resourceManager;
+
+   std::cout << "Shutting down engine" << std::endl;
 }
 
 void Engine::init()
@@ -41,15 +47,15 @@ void Engine::init()
 
 	// Load audio file. should move to resource loading class
 	const char* fileName = "assets/audio/BigWave.wav"; // set file path here
-	loadAudio(fileName, audioData, totalFrames, channels, sampleRate);
+	//loadAudio(fileName, audioData, totalFrames, channels, sampleRate);
 
-	if (!audioData.empty())
-    {
-	    std::cout << "Loaded audio file in engine: " << fileName << std::endl;
-	    std::cout << "Total frames in engine: " << totalFrames << std::endl;
-        std::cout << "Channels in engine: " << channels << std::endl;
-        std::cout << "Sample rate in engine: " << sampleRate << std::endl;
-    }
+	//if (!audioData.empty())
+    //{
+	//    std::cout << "Loaded audio file in engine: " << fileName << std::endl;
+	//    std::cout << "Total frames in engine: " << totalFrames << std::endl;
+    //    std::cout << "Channels in engine: " << channels << std::endl;
+    //    std::cout << "Sample rate in engine: " << sampleRate << std::endl;
+    //}
 
 	// GLFW initialise
     glfwInitialise();
@@ -182,58 +188,58 @@ void Engine::imguiInitialise()
 
 // This needs to be removed and replaced with a class that will handle the audio callback ---------
 // Load audio file
-void Engine::loadAudio(const char* filename, // name of audio file
-	std::vector<float>& audioData, // file's audio data
-	ma_uint64& totalFrames, // total number of frames in the audio file (determines the length of the audio file)
-	ma_uint32& channels, // number of channels the audio file uses
-	ma_uint32& sampleRate) // audio file's sample rate
-{
-	ma_result result; // varible that checks if operation was successful or not
-	ma_decoder decoder; // variable that decodes the audio file
-
-	// Initialize decoder 
-    result = ma_decoder_init_file(filename, NULL, &decoder);
-    if (result != MA_SUCCESS)
-    {
-		    std::cerr << "Failed to initialize decoder while loading: " << filename 
-              << ". Error code: " << result << std::endl;
-            return;
-	}
-
-	if (result = ma_decoder_get_length_in_pcm_frames(&decoder, &totalFrames)) // get the total number of frames in the audio file
-    {
-        std::cerr << "Failed to initialize audio file: " << filename 
-              << ". Error code: " << result << std::endl;
-            return;
-    }
-
-	channels = decoder.outputChannels; // set channels to the number of channels in the audio file
-	sampleRate = decoder.outputSampleRate; // set sample rate to the audio file's sample rate
-
-	// Resize audio data buffer to fit the audio data
-    audioData.resize(totalFrames * channels);		
-    
-    // Prepare buffer for audio data
-    std::cout << "- Audio data check within loadAudio function ----------------------" << std::endl;
-	std::cout << "File loaded: " << filename << std::endl;
-	std::cout << "Total frames in loadAudio: " << totalFrames << std::endl;
-	std::cout << "Channels in loadAudio: " << channels << std::endl;
-	std::cout << "Sample rate in loadAudio: " << sampleRate << std::endl;
-	std::cout << "Audio data size in loadAudio: " << audioData.size() << std::endl;
-    std::cout << "-------------------------------------------------------------------\n" << std::endl;
-
-    // Read audio data from audio file into buffer
-	result = ma_decoder_read_pcm_frames(&decoder, audioData.data(), totalFrames, &totalFrames);
-	if (result != MA_SUCCESS)
-	{
-        std::cerr << "Failed to read PCM frames" << std::endl;
-		ma_decoder_uninit(&decoder);
-        return;
-    }
-
-	// Cleanup decoder
-	ma_decoder_uninit(&decoder);
-}
+//void Engine::loadAudio(const char* filename, // name of audio file
+//	std::vector<float>& audioData, // file's audio data
+//	ma_uint64& totalFrames, // total number of frames in the audio file (determines the length of the audio file)
+//	ma_uint32& channels, // number of channels the audio file uses
+//	ma_uint32& sampleRate) // audio file's sample rate
+//{
+//	ma_result result; // varible that checks if operation was successful or not
+//	ma_decoder decoder; // variable that decodes the audio file
+//
+//	// Initialize decoder 
+//    result = ma_decoder_init_file(filename, NULL, &decoder);
+//    if (result != MA_SUCCESS)
+//    {
+//		    std::cerr << "Failed to initialize decoder while loading: " << filename 
+//              << ". Error code: " << result << std::endl;
+//            return;
+//	}
+//
+//	if (result = ma_decoder_get_length_in_pcm_frames(&decoder, &totalFrames)) // get the total number of frames in the audio file
+//    {
+//        std::cerr << "Failed to initialize audio file: " << filename 
+//              << ". Error code: " << result << std::endl;
+//            return;
+//    }
+//
+//	channels = decoder.outputChannels; // set channels to the number of channels in the audio file
+//	sampleRate = decoder.outputSampleRate; // set sample rate to the audio file's sample rate
+//
+//	// Resize audio data buffer to fit the audio data
+//    audioData.resize(totalFrames * channels);		
+//    
+//    // Prepare buffer for audio data
+//    std::cout << "- Audio data check within loadAudio function ----------------------" << std::endl;
+//	std::cout << "File loaded: " << filename << std::endl;
+//	std::cout << "Total frames in loadAudio: " << totalFrames << std::endl;
+//	std::cout << "Channels in loadAudio: " << channels << std::endl;
+//	std::cout << "Sample rate in loadAudio: " << sampleRate << std::endl;
+//	std::cout << "Audio data size in loadAudio: " << audioData.size() << std::endl;
+//    std::cout << "-------------------------------------------------------------------\n" << std::endl;
+//
+//    // Read audio data from audio file into buffer
+//	result = ma_decoder_read_pcm_frames(&decoder, audioData.data(), totalFrames, &totalFrames);
+//	if (result != MA_SUCCESS)
+//	{
+//        std::cerr << "Failed to read PCM frames" << std::endl;
+//		ma_decoder_uninit(&decoder);
+//        return;
+//    }
+//
+//	// Cleanup decoder
+//	ma_decoder_uninit(&decoder);
+//}
 
 int Engine::paWaveCallback(const void *inputBuffer, void *outputBuffer,
                           unsigned long framesPerBuffer,
@@ -276,4 +282,13 @@ int Engine::paWaveCallback(const void *inputBuffer, void *outputBuffer,
     //    if (data->right_phase >= 1.0f) data->right_phase -= 2.0f;
     //}
     return paContinue;
+}
+
+void Engine::loadSound()
+{
+    auto soundOne = resourceManager->getAsset("assets/audio/BigWave.wav");
+
+    if (soundOne && soundOne->isLoaded())
+        std::cout << "Sound 1 loaded" << std::endl;
+
 }

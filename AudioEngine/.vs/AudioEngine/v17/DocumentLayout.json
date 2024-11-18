@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\AudioAsset.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\ResourceManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\AudioAsset.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\AudioAsset.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\Engine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\Event.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\Engine.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Voice.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\Voice.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|solutionrelative:AudioEngine\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D060AA1D-34F5-4461-A75C-CE341562CF83}|AudioEngine\\AudioEngine.vcxproj|D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 214,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -75,28 +75,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResourceManager.cpp",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.cpp",
-              "RelativeDocumentMoniker": "AudioEngine\\ResourceManager.cpp",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.cpp",
-              "RelativeToolTip": "AudioEngine\\ResourceManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T11:01:34.056Z",
+              "DocumentIndex": 4,
+              "Title": "Engine.h",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.h",
+              "RelativeDocumentMoniker": "AudioEngine\\Engine.h",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.h",
+              "RelativeToolTip": "AudioEngine\\Engine.h",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAF0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-18T13:17:09.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AudioAsset.cpp",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.cpp",
-              "RelativeDocumentMoniker": "AudioEngine\\AudioAsset.cpp",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.cpp",
-              "RelativeToolTip": "AudioEngine\\AudioAsset.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Title": "Engine.cpp",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.cpp",
+              "RelativeDocumentMoniker": "AudioEngine\\Engine.cpp",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.cpp",
+              "RelativeToolTip": "AudioEngine\\Engine.cpp",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAAACMBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T11:01:32.129Z",
+              "WhenOpened": "2024-11-18T13:17:07.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResourceManager.h",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.h",
+              "RelativeDocumentMoniker": "AudioEngine\\ResourceManager.h",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.h",
+              "RelativeToolTip": "AudioEngine\\ResourceManager.h",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-18T14:00:04.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResourceManager.cpp",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.cpp",
+              "RelativeDocumentMoniker": "AudioEngine\\ResourceManager.cpp",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.cpp",
+              "RelativeToolTip": "AudioEngine\\ResourceManager.cpp",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-18T11:01:34.056Z",
               "EditorCaption": ""
             },
             {
@@ -107,48 +133,22 @@
               "RelativeDocumentMoniker": "AudioEngine\\AudioAsset.h",
               "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.h",
               "RelativeToolTip": "AudioEngine\\AudioAsset.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-18T10:59:58.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Voice.h",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Voice.h",
-              "RelativeDocumentMoniker": "AudioEngine\\Voice.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Voice.h",
-              "RelativeToolTip": "AudioEngine\\Voice.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:48:50.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResourceManager.h",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.h",
-              "RelativeDocumentMoniker": "AudioEngine\\ResourceManager.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\ResourceManager.h",
-              "RelativeToolTip": "AudioEngine\\ResourceManager.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:40:32.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Event.h",
-              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Event.h",
-              "RelativeDocumentMoniker": "AudioEngine\\Event.h",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Event.h",
-              "RelativeToolTip": "AudioEngine\\Event.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-17T15:04:47.963Z",
+              "Title": "AudioAsset.cpp",
+              "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.cpp",
+              "RelativeDocumentMoniker": "AudioEngine\\AudioAsset.cpp",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\AudioAsset.cpp",
+              "RelativeToolTip": "AudioEngine\\AudioAsset.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwEAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-18T11:01:32.129Z",
               "EditorCaption": ""
             }
           ]
@@ -161,8 +161,8 @@
       "FloatingWindowState": {
         "Id": "12bb16e4-9d87-49ed-a1dc-e8a20b98cba1",
         "Display": 0,
-        "X": 1824,
-        "Y": 245,
+        "X": 1640,
+        "Y": 110,
         "Width": 1384,
         "Height": 952,
         "WindowState": 0
