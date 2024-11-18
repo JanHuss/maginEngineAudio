@@ -58,6 +58,12 @@
     <Filter Include="Source Files\EffectEngine\Effects">
       <UniqueIdentifier>{30ce5112-5a8f-47f4-aa16-3dfda5531702}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\EngineCore\AssetHandling">
+      <UniqueIdentifier>{cc4936b6-697b-489c-af93-348d79d55a5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EngineCore\AssetHandling">
+      <UniqueIdentifier>{ede32992-adb2-4d71-9581-c465a5c713c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -137,6 +143,12 @@
     </ClCompile>
     <ClCompile Include="VoiceFrameUI.cpp">
       <Filter>Source Files\EngineCore\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\EngineCore\AssetHandling</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioAsset.cpp">
+      <Filter>Source Files\EngineCore\AssetHandling</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +244,12 @@
     </ClInclude>
     <ClInclude Include="VoiceFrameUI.h">
       <Filter>Header Files\EngineCore\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioAsset.h">
+      <Filter>Header Files\EngineCore\AssetHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\EngineCore\AssetHandling</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

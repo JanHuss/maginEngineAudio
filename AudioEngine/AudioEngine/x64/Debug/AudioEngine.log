@@ -1,2 +1,19 @@
-﻿  EventFrameUI.cpp
+﻿  AudioAsset.cpp
+  Engine.cpp
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(253,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(254,62): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Event.cpp
+  EventFrameUI.cpp
+  EventManager.cpp
+  main.cpp
+  ResourceManager.cpp
+  UI.cpp
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\UI.cpp(79,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Voice.cpp
+  VoiceManager.cpp
+  Generating Code...
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(138,1): warning C4715: 'Engine::portAudioInitialise': not all control paths return a value
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(120,1): warning C4715: 'Engine::run': not all control paths return a value
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(171,1): warning C4715: 'Engine::glfwInitialise': not all control paths return a value
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe

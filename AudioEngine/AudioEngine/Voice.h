@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include "ResourceManager.h"
+
 /// <Voice Summary>
 /// ==========================================================
 /// This class handles the tracking of voice playback 

@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AudioAsset.cpp" />
     <ClCompile Include="AudioEngineInterface.cpp" />
     <ClCompile Include="BitCrush.cpp" />
     <ClCompile Include="Budget.cpp" />
@@ -173,12 +174,14 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="Voice.cpp" />
     <ClCompile Include="VoiceFrameUI.cpp" />
     <ClCompile Include="VoiceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioAsset.h" />
     <ClInclude Include="AudioEngineInterface.h" />
     <ClInclude Include="BitCrush.h" />
     <ClInclude Include="Budget.h" />
@@ -206,6 +209,7 @@
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="miniaudio.h" />
+    <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="Voice.h" />
     <ClInclude Include="VoiceFrameUI.h" />
