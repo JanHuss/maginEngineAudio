@@ -46,7 +46,7 @@ void Engine::init()
     miniAudioInitialise();
 
 	// Load audio file. should move to resource loading class
-	const char* fileName = "assets/audio/BigWave.wav"; // set file path here
+	//const char* fileName = "assets/audio/BigWave.wav"; // set file path here
 	//loadAudio(fileName, audioData, totalFrames, channels, sampleRate);
 
 	//if (!audioData.empty())
@@ -80,7 +80,8 @@ int Engine::run()
 	    glClearColor(0.07f, 0.13f, 0.17f, 1.0f); // sets window colour. not important really
         glClear(GL_COLOR_BUFFER_BIT);
         // Update functions here. pass through delta time as dt if needed
-        
+
+
         // Render here
 		uI->renderEngineFrame(); 	
         eventManager->render();
@@ -241,48 +242,48 @@ void Engine::imguiInitialise()
 //	ma_decoder_uninit(&decoder);
 //}
 
-int Engine::paWaveCallback(const void *inputBuffer, void *outputBuffer,
-                          unsigned long framesPerBuffer,
-                          const PaStreamCallbackTimeInfo* timeInfo,
-                          PaStreamCallbackFlags statusFlags,
-                          void *userData) {
-    paTestData *data = (paTestData*)userData;
-    float *out = (float*)outputBuffer;
-    unsigned int i;
-
-    const float frequency = 440.0f;
-	const float sampleRate = 44100.0f;
-
-	// Generate a simple sine wave
-    for (i = 0; i < framesPerBuffer; i++) {
-        // Calculate the sine wave for the left and right channels
-        *out++ = 0.5f * sinf(data->left_phase * 2.0f * M_PI * frequency);  // Left channel
-        *out++ = 0.5f * sinf(data->right_phase * 2.0f * M_PI * frequency); // Right channel
-
-        // Increment the phase for the sine wave
-        data->left_phase += 1.0f / sampleRate; // Increment phase for left channel
-        data->right_phase += 1.0f / sampleRate; // Increment phase for right channel
-
-        // Optionally wrap around the phase to avoid overflow
-        if (data->left_phase >= 1.0f) data->left_phase -= 1.0f;
-        if (data->right_phase >= 1.0f) data->right_phase -= 1.0f;
-    }
-	//Pa_Sleep(1000); // Sleep for 1 second
-    
-	//// Generate a simple saw wave
-    //for (i = 0; i < framesPerBuffer; i++) {
-    //    *out++ = data->left_phase;  // Left channel
-    //    *out++ = data->right_phase; // Right channel
-    //
-    //    // Simple phase increment (for saw wave example)
-    //    data->left_phase += 0.01f;
-    //    data->right_phase += 0.01f;
-    //
-    //    if (data->left_phase >= 1.0f) data->left_phase -= 2.0f;
-    //    if (data->right_phase >= 1.0f) data->right_phase -= 2.0f;
-    //}
-    return paContinue;
-}
+//int Engine::paWaveCallback(const void *inputBuffer, void *outputBuffer,
+//                          unsigned long framesPerBuffer,
+//                          const PaStreamCallbackTimeInfo* timeInfo,
+//                          PaStreamCallbackFlags statusFlags,
+//                          void *userData) {
+//    paTestData *data = (paTestData*)userData;
+//    float *out = (float*)outputBuffer;
+//    unsigned int i;
+//
+//    const float frequency = 440.0f;
+//	const float sampleRate = 44100.0f;
+//
+//	// Generate a simple sine wave
+//    for (i = 0; i < framesPerBuffer; i++) {
+//        // Calculate the sine wave for the left and right channels
+//        *out++ = 0.5f * sinf(data->left_phase * 2.0f * M_PI * frequency);  // Left channel
+//        *out++ = 0.5f * sinf(data->right_phase * 2.0f * M_PI * frequency); // Right channel
+//
+//        // Increment the phase for the sine wave
+//        data->left_phase += 1.0f / sampleRate; // Increment phase for left channel
+//        data->right_phase += 1.0f / sampleRate; // Increment phase for right channel
+//
+//        // Optionally wrap around the phase to avoid overflow
+//        if (data->left_phase >= 1.0f) data->left_phase -= 1.0f;
+//        if (data->right_phase >= 1.0f) data->right_phase -= 1.0f;
+//    }
+//	//Pa_Sleep(1000); // Sleep for 1 second
+//    
+//	//// Generate a simple saw wave
+//    //for (i = 0; i < framesPerBuffer; i++) {
+//    //    *out++ = data->left_phase;  // Left channel
+//    //    *out++ = data->right_phase; // Right channel
+//    //
+//    //    // Simple phase increment (for saw wave example)
+//    //    data->left_phase += 0.01f;
+//    //    data->right_phase += 0.01f;
+//    //
+//    //    if (data->left_phase >= 1.0f) data->left_phase -= 2.0f;
+//    //    if (data->right_phase >= 1.0f) data->right_phase -= 2.0f;
+//    //}
+//    return paContinue;
+//}
 
 void Engine::loadSound()
 {
@@ -290,5 +291,16 @@ void Engine::loadSound()
 
     if (soundOne && soundOne->isLoaded())
         std::cout << "Sound 1 loaded" << std::endl;
+
+    // assign the sound one asset to a voice
+    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(soundOne);
+
+    auto soundTwo = resourceManager->getAsset("assets/audio/TrapDoor.wav");
+
+    if (soundTwo && soundTwo->isLoaded())
+        std::cout << "Sound 2 loaded" << std::endl;
+
+    // assign the sound one asset to a voice
+    eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(soundTwo);
 
 }

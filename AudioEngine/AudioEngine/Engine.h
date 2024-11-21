@@ -1,3 +1,17 @@
+/// <Engine Core Summary>
+/// ==========================================================
+/// This class holds the entire audio engine together.
+/// It would be considered as the "Application" class
+///	for other software. 
+/// 
+/// The only other classes that are recieving information
+/// from this class are "main.cpp" for being able to run
+/// the application and "UI" for passing "Engine parameters".
+/// 
+/// Otherwise, this class will act as a parent to most
+/// of the audio engine classes (Check EngineCore folder).
+/// ==========================================================
+/// </Engine Core Summary>
 #pragma once
 
 #ifndef M_PI
@@ -26,20 +40,6 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-/// <Engine Core Summary>
-/// ==========================================================
-/// This class holds the entire audio engine together.
-/// It would be considered as the "Application" class
-///	for other software. 
-/// 
-/// The only other classes that are recieving information
-/// from this class are "main.cpp" for being able to run
-/// the application and "UI" for passing "Engine parameters".
-/// 
-/// Otherwise, this class will act as a parent to most
-/// of the audio engine classes (Check EngineCore folder).
-/// ==========================================================
-/// </Engine Core Summary>
 
 enum EngineStatus
 {
@@ -49,12 +49,12 @@ enum EngineStatus
 };
 
 // Define PortAudio callback function for streaming audio data to the sound card ------------
-typedef int PaStreamCallback (const void* input, // points to incoming audio data
-	                          void* output, // points to the buffer where to write the outgoing audio data
-	                          unsigned long frameCount, // number of frames the sound card is requesting
-	                          const PaStreamCallbackTimeInfo* timeInfo, // provides time information for the current audio callback
-	                          PaStreamCallbackFlags statusFlags, // contains flags that indicate whether input and/or output buffers have been inserted or will be dropped
-	                          void* userData); // A custom pointer that is passed to the callback function
+//typedef int PaStreamCallback (const void* input, // points to incoming audio data
+//	                          void* output, // points to the buffer where to write the outgoing audio data
+//	                          unsigned long frameCount, // number of frames the sound card is requesting
+//	                          const PaStreamCallbackTimeInfo* timeInfo, // provides time information for the current audio callback
+//	                          PaStreamCallbackFlags statusFlags, // contains flags that indicate whether input and/or output buffers have been inserted or will be dropped
+//	                          void* userData); // A custom pointer that is passed to the callback function
 
 // create test wave. I'm keeping this just in case ------------------------------
 typedef struct {
@@ -84,11 +84,11 @@ public:
 	//				ma_uint32& channels, // number of channels the audio file uses
 	//				ma_uint32& sampleRate); // audio file's sample rate
 
-	static int paWaveCallback(const void *inputBuffer, void *outputBuffer,
-                          unsigned long framesPerBuffer,
-                          const PaStreamCallbackTimeInfo* timeInfo,
-                          PaStreamCallbackFlags statusFlags,
-                          void *userData);
+	//static int paWaveCallback(const void *inputBuffer, void *outputBuffer,
+    //                      unsigned long framesPerBuffer,
+    //                      const PaStreamCallbackTimeInfo* timeInfo,
+    //                      PaStreamCallbackFlags statusFlags,
+    //                      void *userData);
 
 	// testloading sounds in engine
 	void loadSound();

@@ -1,2 +1,7 @@
-﻿  AudioAsset.cpp
+﻿  Engine.cpp
+  Voice.cpp
+  Generating Code...
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(126,1): warning C4715: 'Engine::run': not all control paths return a value
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(177,1): warning C4715: 'Engine::glfwInitialise': not all control paths return a value
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(144,1): warning C4715: 'Engine::portAudioInitialise': not all control paths return a value
   AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe

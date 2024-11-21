@@ -38,6 +38,7 @@ public:
 	~Voice();
 
 	void init();
+	void assignVoice(std::shared_ptr<AudioAsset> asset);
 	void render();
 };
 
