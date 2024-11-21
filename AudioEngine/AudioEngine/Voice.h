@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "ResourceManager.h"
+#include "Playback.h"
 
 /// <Voice Summary>
 /// ==========================================================
@@ -33,12 +34,19 @@
 class Voice
 {
 private:
+	std::shared_ptr<AudioAsset> loadedSound;
+	
+
 public:
 	Voice();
 	~Voice();
 
 	void init();
-	void assignVoice(std::shared_ptr<AudioAsset> asset);
+	void assignVoice(std::string assetName, std::shared_ptr<AudioAsset> asset);
 	void render();
+
+	// transport 
+	void play();
+	void stop();
 };
 

@@ -150,6 +150,9 @@
     <ClCompile Include="AudioAsset.cpp">
       <Filter>Source Files\EngineCore\AssetHandling</Filter>
     </ClCompile>
+    <ClCompile Include="Playback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h">
@@ -250,6 +253,9 @@
     </ClInclude>
     <ClInclude Include="ResourceManager.h">
       <Filter>Header Files\EngineCore\AssetHandling</Filter>
+    </ClInclude>
+    <ClInclude Include="Playback.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

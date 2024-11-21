@@ -9,6 +9,7 @@ Engine::Engine()
     eventManager = new EventManager();
 	uI = new UI(eventManager);
     resourceManager = new ResourceManager();
+    playback = new Playback();
 
 	//// Initialise audio data variables
     //totalFrames = 0;
@@ -28,6 +29,9 @@ Engine::~Engine()
 
    resourceManager = nullptr;
    delete resourceManager;
+
+   playback = nullptr;
+   delete playback;
 
    std::cout << "Shutting down engine" << std::endl;
 }
@@ -287,20 +291,20 @@ void Engine::imguiInitialise()
 
 void Engine::loadSound()
 {
-    auto soundOne = resourceManager->getAsset("assets/audio/BigWave.wav");
+    auto asset = resourceManager->getAsset("assets/audio/BigWave.wav");
 
-    if (soundOne && soundOne->isLoaded())
+    if (asset && asset->isLoaded())
         std::cout << "Sound 1 loaded" << std::endl;
-
+    assetName = "Big Wave";
     // assign the sound one asset to a voice
-    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(soundOne);
+    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(assetName, asset);
 
-    auto soundTwo = resourceManager->getAsset("assets/audio/TrapDoor.wav");
-
-    if (soundTwo && soundTwo->isLoaded())
+    asset = resourceManager->getAsset("assets/audio/TrapDoor.wav");
+    assetName = "TrapDoor";
+    if (asset && asset->isLoaded())
         std::cout << "Sound 2 loaded" << std::endl;
 
     // assign the sound one asset to a voice
-    eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(soundTwo);
+    eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(assetName, asset);
 
 }

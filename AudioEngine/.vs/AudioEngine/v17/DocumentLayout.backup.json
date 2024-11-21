@@ -71,12 +71,11 @@
               "Title": "Voice.cpp",
               "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Voice.cpp",
               "RelativeDocumentMoniker": "AudioEngine\\Voice.cpp",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Voice.cpp*",
-              "RelativeToolTip": "AudioEngine\\Voice.cpp*",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Voice.cpp",
+              "RelativeToolTip": "AudioEngine\\Voice.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-21T13:49:38.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T13:49:38.247Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "AudioEngine\\Voice.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-21T13:49:21.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T13:49:21.656Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "AudioEngine\\Engine.h",
               "ViewState": "AgIAAEIAAAAAAAAAAAAAAFoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T13:17:09.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T13:17:09.002Z"
             },
             {
               "$type": "Document",
@@ -110,9 +107,9 @@
               "Title": "Engine.cpp",
               "DocumentMoniker": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.cpp",
               "RelativeDocumentMoniker": "AudioEngine\\Engine.cpp",
-              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.cpp*",
-              "RelativeToolTip": "AudioEngine\\Engine.cpp*",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAC4BAABWAAAAAAAAAA==",
+              "ToolTip": "D:\\De Daduck (Jan)\\Work\\Audio Programming\\MaginEngineAudio\\AudioEngine\\AudioEngine\\Engine.cpp",
+              "RelativeToolTip": "AudioEngine\\Engine.cpp",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-18T13:17:07.79Z",
               "EditorCaption": ""
@@ -127,8 +124,7 @@
               "RelativeToolTip": "AudioEngine\\ResourceManager.h",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T14:00:04.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T14:00:04.434Z"
             },
             {
               "$type": "Document",
@@ -140,8 +136,7 @@
               "RelativeToolTip": "AudioEngine\\ResourceManager.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T11:01:34.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T11:01:34.056Z"
             },
             {
               "$type": "Document",
@@ -153,8 +148,7 @@
               "RelativeToolTip": "AudioEngine\\AudioAsset.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-18T10:59:58.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T10:59:58.179Z"
             },
             {
               "$type": "Document",
@@ -166,8 +160,7 @@
               "RelativeToolTip": "AudioEngine\\AudioAsset.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-18T11:01:32.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T11:01:32.129Z"
             }
           ]
         }

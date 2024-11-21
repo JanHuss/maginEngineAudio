@@ -12,6 +12,7 @@
 /// of the audio engine classes (Check EngineCore folder).
 /// ==========================================================
 /// </Engine Core Summary>
+
 #pragma once
 
 #ifndef M_PI
@@ -36,6 +37,7 @@
 #include "UI.h"
 #include "VoiceManager.h"
 #include "ResourceManager.h"
+#include "Playback.h"
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -47,14 +49,6 @@ enum EngineStatus
 	GeneralFailure = -1,
 	InitialisationError = -2
 };
-
-// Define PortAudio callback function for streaming audio data to the sound card ------------
-//typedef int PaStreamCallback (const void* input, // points to incoming audio data
-//	                          void* output, // points to the buffer where to write the outgoing audio data
-//	                          unsigned long frameCount, // number of frames the sound card is requesting
-//	                          const PaStreamCallbackTimeInfo* timeInfo, // provides time information for the current audio callback
-//	                          PaStreamCallbackFlags statusFlags, // contains flags that indicate whether input and/or output buffers have been inserted or will be dropped
-//	                          void* userData); // A custom pointer that is passed to the callback function
 
 // create test wave. I'm keeping this just in case ------------------------------
 typedef struct {
@@ -77,19 +71,6 @@ public:
 	int glfwInitialise();
 	void imguiInitialise();
 
-	// functions that need to be moved to other classes
-	//void loadAudio(const char* filename, // name of audio file
-	//				std::vector<float>& audioData, // file's audio data
-	//				ma_uint64& totalFrames, // total number of frames in the audio file (determines the length of the audio file)
-	//				ma_uint32& channels, // number of channels the audio file uses
-	//				ma_uint32& sampleRate); // audio file's sample rate
-
-	//static int paWaveCallback(const void *inputBuffer, void *outputBuffer,
-    //                      unsigned long framesPerBuffer,
-    //                      const PaStreamCallbackTimeInfo* timeInfo,
-    //                      PaStreamCallbackFlags statusFlags,
-    //                      void *userData);
-
 	// testloading sounds in engine
 	void loadSound();
 
@@ -101,11 +82,8 @@ private:
 	//VoiceManager* voiceManager;
 	Voice* voice;
 	ResourceManager* resourceManager;
+	Playback* playback;
 
-	//// Create audio data variables
-	//std::vector<float> audioData;
-    //ma_uint64 totalFrames;
-	//ma_uint32 channels;
-	//ma_uint32 sampleRate;
+	std::string assetName;
 };
 
