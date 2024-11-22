@@ -27,7 +27,7 @@
 
 #include "iostream"
 #include "vector"
-#include <portaudio.h>
+//#include <portaudio.h>
 #include <cmath>
 
 #include "miniaudio.h"
@@ -66,7 +66,7 @@ public:
 	int run();
 
 	// init functions
-	int portAudioInitialise();
+	//int portAudioInitialise();
 	void miniAudioInitialise();
 	int glfwInitialise();
 	void imguiInitialise();

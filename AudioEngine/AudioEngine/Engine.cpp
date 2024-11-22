@@ -46,7 +46,7 @@ void Engine::init()
     eventManager->init();
 
 	// PortAudio Initialise
-	portAudioInitialise();
+	//portAudioInitialise();
 	// MiniAudio Initialise
     miniAudioInitialise();
 	// GLFW initialise
@@ -97,7 +97,7 @@ int Engine::run()
     }
 
     playbackStop();
-	Pa_Terminate(); 
+	//Pa_Terminate(); 
 
 	// Cleanup ImGui
     ImGui_ImplOpenGL3_Shutdown();
@@ -114,7 +114,7 @@ int Engine::run()
 		std::cerr << "Exeption handling - An error occurred: " << e.what() << std::endl;
 
 		// Cleanup if an error occurs
-        Pa_Terminate(); // PortAudio
+        //Pa_Terminate(); // PortAudio
 		ImGui_ImplOpenGL3_Shutdown(); // ImGui possibly need to add these back in for cleanup later
 		ImGui_ImplGlfw_Shutdown();  // ImGui
 		ImGui::DestroyContext(); // ImGui
@@ -126,23 +126,23 @@ int Engine::run()
 	
 }
 
-int Engine::portAudioInitialise()
-{
-    // PortAudio Initialise
-	PaError err = Pa_Initialize();
-    paTestData data = { 0 };  // Initialize phase data for the sine wave
-
-
-    if (err != paNoError) {
-        std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
-        return InitialisationError;
-    }
-	std::cout << "- Library check ---------------------------------------------------" << std::endl;
-    std::cout << "PortAudio initialized successfully!" << std::endl;
-
-	// Display PortAudio version
-	std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
-}
+//int Engine::portAudioInitialise()
+//{
+//    // PortAudio Initialise
+//	PaError err = Pa_Initialize();
+//    paTestData data = { 0 };  // Initialize phase data for the sine wave
+//
+//
+//    if (err != paNoError) {
+//        std::cout << "PortAudio error: " << Pa_GetErrorText(err) << std::endl;
+//        return InitialisationError;
+//    }
+//	std::cout << "- Library check ---------------------------------------------------" << std::endl;
+//    std::cout << "PortAudio initialized successfully!" << std::endl;
+//
+//	// Display PortAudio version
+//	std::cout << "PortAudio version: " << Pa_GetVersionText() << std::endl;
+//}
 
 void Engine::miniAudioInitialise()
 {
