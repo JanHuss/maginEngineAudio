@@ -32,8 +32,8 @@ EventFrameUI::EventFrameUI(EventManager* eventMan) : eventManager(eventMan)
 	// This block is a placeholder to ensure that the amount of voices loaded in the UI are a set amount.`
 	voiceFrameUIvec.push_back(new VoiceFrameUI);
 	voiceFrameUIvec.push_back(new VoiceFrameUI);
-	voiceFrameUIvec.push_back(new VoiceFrameUI);
-	voiceFrameUIvec.push_back(new VoiceFrameUI);
+	//voiceFrameUIvec.push_back(new VoiceFrameUI);
+	//voiceFrameUIvec.push_back(new VoiceFrameUI);
 	//}
 	
 
@@ -54,7 +54,7 @@ void EventFrameUI::renderEventFrame(int eventID)
 
 	ImGui::PushID(eventID); // eventID is the size of the vector of Event pointers `eventFrameUIvec` in the UI class 
 	//Initialise event frame from ImGui
-	ImGui::BeginChild("Event Frame", ImVec2(500, 300), true); // if time, perhaps adjust the size of the event frame to the amount of voices created within the event.
+	ImGui::BeginChild("Event Frame", ImVec2(500, 350), true); // if time, perhaps adjust the size of the event frame to the amount of voices created within the event.
     ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.5f, 0.0f, 1.0f));
 	ImGui::Text("Event Frame");
     ImGui::PopStyleColor();

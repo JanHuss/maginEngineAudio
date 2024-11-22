@@ -1,17 +1,17 @@
 #include "EventManager.h"
 
-EventManager::EventManager(/*UI* ui*/)//: uiPtr(ui)
+EventManager::EventManager(Playback* pb) : playback(pb)
 {
 	//init();
 	//std::cout << "EventManager Constructor - uiPtr: " << uiPtr << std::endl;
 	// for testing one event frame
 	//if (events.size() < 1)
 		//events.push_back(Event(uiPtr));
-	maxEventsAllowed = 2;
+	maxEventsAllowed = 1;
        
 	for(int i = 0; i < maxEventsAllowed; i++)
 	{
-		events.push_back(new Event);
+		events.push_back(new Event(playback));
 		events[i]->init();
 	}
 

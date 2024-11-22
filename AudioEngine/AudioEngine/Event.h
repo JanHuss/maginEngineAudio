@@ -1,9 +1,3 @@
-#pragma once
-#include "iostream"
-
-//#include "UI.h"
-#include "VoiceManager.h"
-
 /// <Event Summary>
 /// ==========================================================
 /// This Class defines the functionality of multiple voices.
@@ -15,18 +9,25 @@
 /// ==========================================================
 /// </Event Summary>
 
+#pragma once
+#include "iostream"
+
+//#include "UI.h"
+#include "VoiceManager.h"
+#include "Playback.h"
+
 class Event
 {
 private:
 	// Pointers
-	//UI* uiPtr;
+	Playback* playback;
 
 	int eventID;
 	std::string eventName;
 
 
 public:
-	Event(/*UI* ui*/);
+	Event(Playback* pb);
 	~Event();
 
 	void init();

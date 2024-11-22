@@ -1,11 +1,3 @@
-#pragma once
-
-#include <string>
-#include <vector>
-
-#include "Event.h"
-//#include "UI.h"
-
 /// <Event Manager Summary>
 /// ==========================================================
 /// This class handles the amount of Event classes that can 
@@ -27,17 +19,28 @@
 /// ==========================================================
 /// </Event Manager Summary>
 
+#pragma once
+
+#include <string>
+#include <vector>
+
+#include "Event.h"
+#include "Playback.h"
+//#include "UI.h"
+
+
 class EventManager
 {
 private:
 	//std::vector<class Event> events;
 	// Pointers
 	//UI* uiPtr;
+	Playback* playback;
 	int maxEventsAllowed;
 	std::vector<class Event*> events;
 
 public:
-	EventManager(/*UI* ui*/);
+	EventManager(Playback* pb);
 	~EventManager();
 
 	void init();

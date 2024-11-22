@@ -1,10 +1,3 @@
-#pragma once
-
-#include <iostream>
-
-#include "ResourceManager.h"
-#include "Playback.h"
-
 /// <Voice Summary>
 /// ==========================================================
 /// This class handles the tracking of voice playback 
@@ -31,22 +24,44 @@
 /// ==========================================================
 /// </Voice Summary>
 
+#pragma once
+
+#include <iostream>
+
+#include "ResourceManager.h"
+#include "Playback.h"
+#include "miniaudio.h"
+
+class Playback;
+
 class Voice
 {
 private:
+	// Pointers
 	std::shared_ptr<AudioAsset> loadedSound;
-	
+	Playback* playback;
+
+	ma_decoder decoder;   // Manages audio decoding
+    bool isLoaded;        // Indicates whether an audio file is loaded
 
 public:
-	Voice();
+	Voice(Playback* pb);
 	~Voice();
 
 	void init();
 	void assignVoice(std::string assetName, std::shared_ptr<AudioAsset> asset);
+	bool loadIntoBuffer(const char* filePath);
 	void render();
 
 	// transport 
 	void play();
 	void stop();
+
+	 int getChannels() const;
+	 ma_format getFormat() const;
+	 ma_uint32 getSampleRate() const;
+
+	 void registerWithPlayback(Playback& playback);
+	 void processAudio(std::vector<float>& mixBuffer, ma_uint32 frameCount); 
 };
 

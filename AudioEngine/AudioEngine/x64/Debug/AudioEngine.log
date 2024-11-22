@@ -1,15 +1,5 @@
 ﻿  Engine.cpp
-  Event.cpp
-  EventFrameUI.cpp
-  EventManager.cpp
-  Playback.cpp
-  UI.cpp
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\UI.cpp(79,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Voice.cpp
-  VoiceManager.cpp
-  main.cpp
-  Generating Code...
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(131,1): warning C4715: 'Engine::run': not all control paths return a value
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(149,1): warning C4715: 'Engine::portAudioInitialise': not all control paths return a value
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(182,1): warning C4715: 'Engine::glfwInitialise': not all control paths return a value
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(145,1): warning C4715: 'Engine::portAudioInitialise': not all control paths return a value
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(178,1): warning C4715: 'Engine::glfwInitialise': not all control paths return a value
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(127,1): warning C4715: 'Engine::run': not all control paths return a value
   AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe

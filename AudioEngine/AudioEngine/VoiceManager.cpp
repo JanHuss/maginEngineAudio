@@ -1,13 +1,11 @@
 #include "VoiceManager.h"
 
-VoiceManager::VoiceManager()
+VoiceManager::VoiceManager(Playback* pb) : playback(pb)
 {
 	maxVoicesAllowed = 2;
 
-	//voice = new Voice;
-
 	for (int i = 0; i < maxVoicesAllowed; i++)
-		voices.push_back(new Voice);
+		voices.push_back(new Voice(playback));
 	//init();
 	//voice->init();
 }

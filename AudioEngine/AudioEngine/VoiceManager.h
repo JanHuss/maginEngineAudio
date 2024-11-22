@@ -1,10 +1,3 @@
-#pragma once
-
-#include "Voice.h"
-
-#include <vector>
-#include <iostream>
-
 /// <Voice Manager Summary>
 /// ==========================================================
 /// This class manages a container of Voice classes. The 
@@ -51,16 +44,26 @@
 /// ==========================================================
 /// </Voice Manager Summary>
 
+#pragma once
+
+#include "Voice.h"
+#include "Playback.h"
+
+#include <vector>
+#include <iostream>
+
+
 class VoiceManager
 {
 private:
 	int maxVoicesAllowed;
 
+	// Pointers
 	std::vector<class Voice*> voices;
-
+	Playback* playback;
 
 public:
-	VoiceManager();
+	VoiceManager(Playback* pb);
 	~VoiceManager();
 
 	void init();

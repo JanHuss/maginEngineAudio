@@ -71,19 +71,26 @@ public:
 	int glfwInitialise();
 	void imguiInitialise();
 
-	// testloading sounds in engine
+	// load and play sounds. needs to be moved into input handler when functional
 	void loadSound();
+	int playbackInitialise();
+	void playbackRegister();
+	int playbackStart();
+	void playbackStop();
+
+	void handleAssets();
 
 private:
 	// Pointers
 	GLFWwindow* window;
 	UI* uI;
 	EventManager* eventManager;
-	//VoiceManager* voiceManager;
 	Voice* voice;
 	ResourceManager* resourceManager;
 	Playback* playback;
 
+	// Variables
 	std::string assetName;
+	bool enterPressed; // test var
 };
 

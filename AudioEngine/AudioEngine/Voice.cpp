@@ -1,19 +1,23 @@
 #include "Voice.h"
 
-Voice::Voice()
+Voice::Voice(Playback* pb) : playback(pb)
 {
 	init();
 	
+	isLoaded = false;
 }
 
 Voice::~Voice()
 {
+	if (isLoaded) 
+		ma_decoder_uninit(&decoder);
 }
 
 void Voice::init()
 {
 	std::cout << "----------------------------------" << std::endl;
 	std::cout << "Calling Voice.init()" << std::endl;
+	std::cout << "Playback address check: " << playback << std::endl;
 	std::cout << "----------------------------------" << std::endl;
 }
 
@@ -31,15 +35,52 @@ void Voice::assignVoice(std::string assetName, std::shared_ptr<AudioAsset> asset
 
 }
 
+bool Voice::loadIntoBuffer(const char* filePath)
+{
+	if (ma_decoder_init_file(filePath, NULL, &decoder) != MA_SUCCESS) {
+            std::cerr << "Failed to load audio file: " << filePath << std::endl;
+            return false;
+        }
+        isLoaded = true;
+        return true;
+}
+
 void Voice::render()
 {
 }
 
-void Voice::play()
-{
+// Retrieve audio properties
+    int Voice::getChannels() const 
+	{ 
+		return decoder.outputChannels;
+	}
+    ma_format Voice::getFormat() const 
+	{ 
+		return decoder.outputFormat; 
+	}
+    ma_uint32 Voice::getSampleRate() const 
+	{ 
+		return decoder.outputSampleRate; 
+	}
+	// Register this voice with playback
+    void Voice::registerWithPlayback(Playback& playback) 
+	{
+		std::cout << "----------------------------------" << std::endl;
+		std::cout << "Calling Voice.RegisterwithPlayback: " << &playback << std::endl;
+		std::cout << "----------------------------------" << std::endl;
+        playback.registerVoice(this);
+    }
 
-}
+    // Process audio and mix it into the buffer
+    void Voice::processAudio(std::vector<float>& mixBuffer, ma_uint32 frameCount) 
+	{
+        if (!isLoaded) return;
 
-void Voice::stop()
-{
-}
+        std::vector<float> tempBuffer(frameCount * decoder.outputChannels);
+        ma_decoder_read_pcm_frames(&decoder, tempBuffer.data(), frameCount, NULL);
+
+        // Mix this voice's audio into the mix buffer
+        for (size_t i = 0; i < tempBuffer.size(); ++i) {
+            mixBuffer[i] += tempBuffer[i];
+        }
+    }
