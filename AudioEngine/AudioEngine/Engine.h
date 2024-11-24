@@ -66,7 +66,6 @@ public:
 	int run();
 
 	// init functions
-	//int portAudioInitialise();
 	void miniAudioInitialise();
 	int glfwInitialise();
 	void imguiInitialise();

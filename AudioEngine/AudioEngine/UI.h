@@ -1,19 +1,3 @@
-#pragma once
-
-#include "imgui.h"
-#include "imgui_impl_glfw.h"
-#include "imgui_impl_opengl3.h"
-
-#include <iostream>
-#include <string>
-#include <vector>
-
-#include "EventManager.h"
-//#include "Event.h"
-#include "EventFrameUI.h"
-//#include "VoiceManager.h"
-
-
 /// <UI Summary>
 /// ==========================================================
 /// This class handles all UI parameters when the engine is 
@@ -45,6 +29,23 @@
 /// 
 /// ==========================================================
 /// </UI Summary>
+
+#pragma once
+
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include "EventManager.h"
+//#include "Event.h"
+#include "EventFrameUI.h"
+//#include "VoiceManager.h"
+
+
 
 
 class UI

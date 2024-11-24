@@ -23,7 +23,7 @@ private:
 	std::vector<Voice*> activeVoices;      // Registered voices
     std::mutex voiceMutex;                 // Protects the activeVoices list
     std::vector<float> mixBuffer;          // Buffer for mixing audio
-    bool isInitialized;                    // Flag to indicate playback readiness
+    bool isInitialised;                    // Flag to indicate playback readiness
 
 
 

@@ -12,12 +12,12 @@ Playback::Playback()
     //deviceConfig.dataCallback      = audioCallback;   // This function will be called when miniaudio needs more data.
     //deviceConfig.pUserData         = &decoder;   // Can be accessed from the device object (device.pUserData).
 	
-    isInitialized = false;
+    isInitialised = false;
 }
 
 Playback::~Playback()
 {
-     if (isInitialized) {
+     if (isInitialised) {
             ma_device_uninit(&device);
         }
 }
@@ -110,7 +110,7 @@ void Playback::audioCallback(ma_device* pDevice, void* pOutput, const void* pInp
             return false;
         }
 
-        isInitialized = true;
+        isInitialised = true;
         return true;
     }
 
@@ -120,14 +120,14 @@ void Playback::audioCallback(ma_device* pDevice, void* pOutput, const void* pInp
         std::cout << "----------------------------------" << std::endl;
 	    std::cout << "Calling playback->start" << std::endl;
 	    std::cout << "----------------------------------" << std::endl;
-        if (!isInitialized) return false;
+        if (!isInitialised) return false;
             return ma_device_start(&device) == MA_SUCCESS;
     }
 
     // Stop playback
     void Playback::stop() 
     {
-        if (isInitialized) ma_device_stop(&device);
+        if (isInitialised) ma_device_stop(&device);
     }
 
     // Register a voice for playback
