@@ -199,13 +199,13 @@ void Engine::loadSound()
     assetName = "Big Wave";
     eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(assetName, asset);
 
-    // load an asset in the resource manager
-    asset = resourceManager->getAsset("assets/audio/TrapDoor.wav");
-    assetName = "TrapDoor";
-    if (asset && asset->isLoaded())
-        std::cout << "Sound 2 loaded" << std::endl;
-    // assign an asset to a voice
-    eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(assetName, asset);
+   //// load an asset in the resource manager
+   //asset = resourceManager->getAsset("assets/audio/TrapDoor.wav");
+   //assetName = "TrapDoor";
+   //if (asset && asset->isLoaded())
+   //    std::cout << "Sound 2 loaded" << std::endl;
+   //// assign an asset to a voice
+   //eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(assetName, asset);
 }
 
 int Engine::playbackInitialise()

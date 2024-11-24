@@ -1,6 +1,2 @@
-﻿  Engine.cpp
-  main.cpp
-  Generating Code...
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(127,1): warning C4715: 'Engine::run': not all control paths return a value
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp(178,1): warning C4715: 'Engine::glfwInitialise': not all control paths return a value
+﻿  Playback.cpp
   AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe

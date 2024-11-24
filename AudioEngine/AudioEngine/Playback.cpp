@@ -54,6 +54,13 @@ void Playback::audioCallback(ma_device* pDevice, void* pOutput, const void* pInp
 	//
 	//memcpy(output, buffer.data(), frameCount * pDecoder->outputChannels * sizeof(float));
 
+    //std::cout << "----------------------------------" << std::endl;
+    //std::cout << "Calling Playback.audioCallback() device: " << pDevice->sampleRate << std::endl;
+    //std::cout << "Calling Playback.audioCallback() pOutput: " << pOutput << std::endl;
+	//std::cout << "Calling Playback.audioCallback() framecount: " << frameCount << std::endl;
+	//std::cout << "----------------------------------" << std::endl;
+
+
 	Playback* playback = (Playback*)pDevice->pUserData;  // Retrieve Playback instance
         playback->mixAudioBuffer((float*)pOutput, frameCount);
 }
