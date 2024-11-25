@@ -22,7 +22,7 @@ bool AudioAsset::load()
 	}
 
 	ma_result result; // varible that checks if operation was successful or not
-	ma_decoder decoder; // variable that decodes the audio file
+	//ma_decoder decoder; // variable that decodes the audio file
 
 	// Initialize decoder 
     result = ma_decoder_init_file(filePath.c_str(), NULL, &decoder);

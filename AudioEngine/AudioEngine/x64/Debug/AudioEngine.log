@@ -1,6 +1,1 @@
-﻿  main.cpp
-  Playback.cpp
-  UI.cpp
-D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\UI.cpp(79,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
-  AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe
+﻿  AudioEngine.vcxproj -> C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe

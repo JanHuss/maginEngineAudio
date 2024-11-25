@@ -251,7 +251,7 @@ void Engine::playbackStop()
 
 void Engine::handleAssets()
 {
-    loadSound();
+    //loadSound();
 
     playbackInitialise();
 

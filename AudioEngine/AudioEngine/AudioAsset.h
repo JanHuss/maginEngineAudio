@@ -46,5 +46,7 @@ public:
 	ma_uint32 getChannels();
 	ma_uint32 getSampleRate();
 	bool isLoaded();
+
+	ma_decoder decoder; // test
 };
 

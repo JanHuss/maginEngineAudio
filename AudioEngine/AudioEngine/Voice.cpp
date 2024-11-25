@@ -24,7 +24,7 @@ void Voice::init()
 void Voice::assignVoice(std::string assetName, std::shared_ptr<AudioAsset> asset)
 {
 	std::cout << "----------------------------------" << std::endl;
-	std::cout << "Asset name: " << assetName << std::endl;
+	std::cout << "Asset name in voice: " << assetName << std::endl;
 	std::cout << "Calling Voice.assignVoice()" << std::endl;
 	std::cout << "Asset variable address in Voice: " << asset << std::endl;
 	loadedSound = asset;
@@ -74,7 +74,8 @@ void Voice::render()
     // Process audio and mix it into the buffer
     void Voice::processAudio(std::vector<float>& mixBuffer, ma_uint32 frameCount) 
 	{
-        if (!isLoaded) return;
+        //if (!isLoaded) return;
+		ma_decoder decoder = loadedSound->decoder;
 
         std::vector<float> tempBuffer(frameCount * decoder.outputChannels);
         ma_decoder_read_pcm_frames(&decoder, tempBuffer.data(), frameCount, NULL);
