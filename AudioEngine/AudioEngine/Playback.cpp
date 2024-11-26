@@ -48,16 +48,16 @@ void Playback::audioCallback(ma_device* pDevice, void* pOutput, const void* pInp
     // mix audio from active voices
     for (auto& voice : playback->activeVoices)
     {
-        if (!voice->isPlaying())
+        if (!voice || !voice->isPlaying())
             continue;
-
+        
         const auto& audioData = voice->getAudioData();
-        ma_uint64 audioCursor = voice-> getAudioPlayhead();
+        ma_uint64 audioPlayhead = voice-> getAudioPlayhead();
         ma_uint64 totalFrames = audioData.size() / pDevice->playback.channels;
 
         for (ma_uint32 frame = 0; frame < frameCount; frame++)
         {
-            if (audioCursor >= totalFrames)
+            if (audioPlayhead >= totalFrames)
             {
                 voice->stop();
                 break;
@@ -65,10 +65,28 @@ void Playback::audioCallback(ma_device* pDevice, void* pOutput, const void* pInp
             
             for (ma_uint32 channel = 0; channel < pDevice->playback.channels; channel++)
             {
-                out[frame * pDevice->playback.channels +channel] += audioData[audioCursor * pDevice->playback.channels + channel];
+                size_t outputIndex = frame * pDevice->playback.channels + channel;
+                size_t inputIndex = audioPlayhead * pDevice->playback.channels + channel;
+
+                // Ensure indices are valid
+                if (outputIndex < frameCount * pDevice->playback.channels &&
+                    inputIndex < audioData.size())
+                {
+                    out[outputIndex] += audioData[inputIndex];
+                }
+
+                //auto f = audioData[audioPlayhead];
+                /*if (f != 0)
+                {
+                    printf("");
+                }*/
+                //out[frame] += audioData[audioPlayhead * pDevice->playback.channels + channel];
             }
-            audioCursor++;
+            audioPlayhead++;
+            //std::cout << "Audio playhead in playback: " << audioPlayhead << std::endl;
+            //voice->setAudioPlayhead(voice->getAudioPlayhead() + 1);
         }
+        voice->setAudioPlayhead(audioPlayhead);
     }
 }
 

@@ -58,11 +58,12 @@ void Engine::init()
     playback->start();
 
     // assign audio to voice
-    std::shared_ptr<AudioAsset> asset = resourceManager->getAsset("BigWave.wav");
+    std::shared_ptr<AudioAsset> asset = resourceManager->getAsset("assets/audio/BigWave.wav");
     auto voice = std::make_shared<Voice>(asset);
 
     eventManager->getEvents()[0]->voiceManager->addVoice(voice);
     playback->registerVoice(voice);
+    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->play();
 }
 
 int Engine::run()
