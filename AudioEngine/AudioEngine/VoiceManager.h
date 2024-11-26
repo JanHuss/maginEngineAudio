@@ -59,7 +59,7 @@ private:
 	int maxVoicesAllowed;
 
 	// Pointers
-	std::vector<class Voice*> voices;
+	std::vector<std::shared_ptr<Voice>> voices;
 	Playback* playback;
 
 public:
@@ -67,10 +67,13 @@ public:
 	~VoiceManager();
 
 	void init();
+
+	void addVoice(std::shared_ptr<Voice> voice);
+
 	void render();
 
 	// Getters
-	std::vector<class Voice*> getVoices();
+	std::vector<std::shared_ptr<Voice>>& getVoices();
 	//Voice* voice;
 };
 

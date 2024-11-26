@@ -53,6 +53,16 @@ void Engine::init()
     glfwInitialise();
 	// Dear ImGui initialise
 	imguiInitialise();
+
+    playback->init();
+    playback->start();
+
+    // assign audio to voice
+    std::shared_ptr<AudioAsset> asset = resourceManager->getAsset("BigWave.wav");
+    auto voice = std::make_shared<Voice>(asset);
+
+    eventManager[0].getEvents()[0]->voiceManager->addVoice(voice);
+    playback->registerVoice(voice);
 }
 
 int Engine::run()
@@ -96,9 +106,9 @@ int Engine::run()
 			glfwSetWindowShouldClose(window, true);
     }
 
-    playbackStop();
+    //playbackStop();
 	//Pa_Terminate(); 
-
+    playback->stop();
 	// Cleanup ImGui
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
@@ -187,18 +197,18 @@ void Engine::imguiInitialise()
     ImGui_ImplOpenGL3_Init("#version 330");
 }
 
-void Engine::loadSound()
-{
-    // load an asset in the resource manager
-    auto asset = resourceManager->getAsset("assets/audio/BigWave.wav");
-
-    if (asset && asset->isLoaded())
-        std::cout << "Sound 1 loaded" << std::endl;
-
-    // assign an asset to a voice
-    assetName = "Big Wave";
-    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(assetName, asset);
-
+//void Engine::loadSound()
+//{
+//    // load an asset in the resource manager
+//    auto asset = resourceManager->getAsset("assets/audio/BigWave.wav");
+//
+//    if (asset && asset->isLoaded())
+//        std::cout << "Sound 1 loaded" << std::endl;
+//
+//    // assign an asset to a voice
+//    assetName = "Big Wave";
+//    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(assetName, asset);
+//
    //// load an asset in the resource manager
    //asset = resourceManager->getAsset("assets/audio/TrapDoor.wav");
    //assetName = "TrapDoor";
@@ -206,56 +216,56 @@ void Engine::loadSound()
    //    std::cout << "Sound 2 loaded" << std::endl;
    //// assign an asset to a voice
    //eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(assetName, asset);
-}
+//}
 
-int Engine::playbackInitialise()
-{
-    std::cout << "----------------------------------------" << std::endl;
-	std::cout << "Calling playback->initialise from engine" << std::endl;
-	std::cout << "----------------------------------------" << std::endl;
-    // initialise playback with desired audio settings
-    if (!playback->initialize(2, ma_format_f32, 44100)) {
-        return -1;
-    }
-    return 0;
-}
+//int Engine::playbackInitialise()
+//{
+//    std::cout << "----------------------------------------" << std::endl;
+//	std::cout << "Calling playback->initialise from engine" << std::endl;
+//	std::cout << "----------------------------------------" << std::endl;
+//    // initialise playback with desired audio settings
+//    if (!playback->initialize(2, ma_format_f32, 44100)) {
+//        return -1;
+//    }
+//    return 0;
+//}
 
-void Engine::playbackRegister()
-{
-    std::cout << "------------------------------------------------------------------------------------" << std::endl;
-	std::cout << "Calling registerWithPlayback from engine and passing through *playback: " << playback << std::endl;
-	std::cout << "------------------------------------------------------------------------------------" << std::endl;
-    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->registerWithPlayback(*playback);
-}
+//void Engine::playbackRegister()
+//{
+//    std::cout << "------------------------------------------------------------------------------------" << std::endl;
+//	std::cout << "Calling registerWithPlayback from engine and passing through *playback: " << playback << std::endl;
+//	std::cout << "------------------------------------------------------------------------------------" << std::endl;
+//    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->registerWithPlayback(*playback);
+//}
 
-int Engine::playbackStart()
-{
-    std::cout << "-----------------------------------" << std::endl;
-	std::cout << "Calling playback->start from engine" << std::endl;
-	std::cout << "-----------------------------------" << std::endl;
-    // Start playback
-    if (!playback->start()) {
-        return -1;
-    }
-    return 0;
-}
+//int Engine::playbackStart()
+//{
+//    std::cout << "-----------------------------------" << std::endl;
+//	std::cout << "Calling playback->start from engine" << std::endl;
+//	std::cout << "-----------------------------------" << std::endl;
+//    // Start playback
+//    if (!playback->start()) {
+//        return -1;
+//    }
+//    return 0;
+//}
 
-void Engine::playbackStop()
-{
-    std::cout << "-----------------------------------" << std::endl;
-	std::cout << "Calling playback->stop from engine" << std::endl;
-	std::cout << "-----------------------------------" << std::endl;
-    // Stop playback
-    playback->stop();
-}
+//void Engine::playbackStop()
+//{
+//    std::cout << "-----------------------------------" << std::endl;
+//	std::cout << "Calling playback->stop from engine" << std::endl;
+//	std::cout << "-----------------------------------" << std::endl;
+//    // Stop playback
+//    playback->stop();
+//}
 
-void Engine::handleAssets()
-{
-    //loadSound();
-
-    playbackInitialise();
-
-    playbackRegister();
-
-    playbackStart();
-}
+//void Engine::handleAssets()
+//{
+//    //loadSound();
+//
+//    playbackInitialise();
+//
+//    playbackRegister();
+//
+//    playbackStart();
+//}

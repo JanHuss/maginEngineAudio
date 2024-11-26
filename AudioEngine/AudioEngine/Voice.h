@@ -29,39 +29,45 @@
 #include <iostream>
 
 #include "ResourceManager.h"
-#include "Playback.h"
 #include "miniaudio.h"
 
-class Playback;
 
 class Voice
 {
 private:
 	// Pointers
-	std::shared_ptr<AudioAsset> loadedSound;
-	Playback* playback;
-
-	ma_decoder decoder;   // Manages audio decoding
-    bool isLoaded;        // Indicates whether an audio file is loaded
+	std::shared_ptr<AudioAsset> audioAsset;
+	ma_uint64 playhead;
+	//ma_decoder decoder;   // Manages audio decoding
+ //   bool isLoaded;        // Indicates whether an audio file is loaded
+	
+	// Variables
+	bool playing;
 
 public:
-	Voice(Playback* pb);
+	Voice(std::shared_ptr<AudioAsset> asset);
 	~Voice();
 
 	void init();
-	void assignVoice(std::string assetName, std::shared_ptr<AudioAsset> asset);
-	bool loadIntoBuffer(const char* filePath);
-	void render();
+	//void assignVoice(std::string assetName, std::shared_ptr<AudioAsset> asset);
+	//bool loadIntoBuffer(const char* filePath);
 
 	// transport 
 	void play();
 	void stop();
+	bool isPlaying() const;
 
-	 int getChannels() const;
-	 ma_format getFormat() const;
-	 ma_uint32 getSampleRate() const;
+	const std::vector<float>& getAudioData() const;
+	ma_uint64 getAudioPlayhead() const;
+	void setAudioPlayhead(ma_uint64 newPlayhead);
 
-	 void registerWithPlayback(Playback& playback);
-	 void processAudio(std::vector<float>& mixBuffer, ma_uint32 frameCount); 
+	//int getChannels() const;
+	//ma_format getFormat() const;
+	//ma_uint32 getSampleRate() const;
+
+	//void registerWithPlayback(Playback& playback);
+	//void processAudio(std::vector<float>& mixBuffer, ma_uint32 frameCount); 
+	
+	void render();
 };
 

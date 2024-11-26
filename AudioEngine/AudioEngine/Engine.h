@@ -75,7 +75,7 @@ public:
 	int playbackInitialise();
 	void playbackRegister();
 	int playbackStart();
-	void playbackStop();
+	//void playbackStop();
 
 	void handleAssets();
 
