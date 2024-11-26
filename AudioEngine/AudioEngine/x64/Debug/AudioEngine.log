@@ -1,1 +1,2 @@
-﻿LINK : fatal error LNK1201: error writing to program database 'D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.pdb'; check for insufficient disk space, invalid path, or insufficient privilege
+﻿  AudioAsset.cpp
+  AudioEngine.vcxproj -> D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\x64\Debug\AudioEngine.exe

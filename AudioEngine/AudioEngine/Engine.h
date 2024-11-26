@@ -72,12 +72,12 @@ public:
 
 	// load and play sounds. needs to be moved into input handler when functional
 	void loadSound();
-	int playbackInitialise();
-	void playbackRegister();
-	int playbackStart();
+	//int playbackInitialise();
+	//void playbackRegister();
+	//int playbackStart();
 	//void playbackStop();
 
-	void handleAssets();
+	//void handleAssets();
 
 private:
 	// Pointers

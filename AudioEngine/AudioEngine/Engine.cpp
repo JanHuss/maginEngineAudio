@@ -3,7 +3,6 @@
 Engine::Engine()
 {
     // initialise libraries, classes and parameters
-    init();
 	
     // Pointer initialisation
     playback = new Playback();
@@ -13,6 +12,7 @@ Engine::Engine()
 
     enterPressed = false;
 
+    init();
     loadSound();
 }
 
@@ -61,7 +61,7 @@ void Engine::init()
     std::shared_ptr<AudioAsset> asset = resourceManager->getAsset("BigWave.wav");
     auto voice = std::make_shared<Voice>(asset);
 
-    eventManager[0].getEvents()[0]->voiceManager->addVoice(voice);
+    eventManager->getEvents()[0]->voiceManager->addVoice(voice);
     playback->registerVoice(voice);
 }
 
@@ -74,7 +74,7 @@ int Engine::run()
 	std::cout << "Calling Engine.run()" << std::endl;
 	std::cout << "----------------------------------" << std::endl;
 
-    handleAssets();
+    //handleAssets();
     
     // Loop that displays all UI information and allows for changes to parameters during runtime
 	while (!glfwWindowShouldClose(window)) 
@@ -133,7 +133,7 @@ int Engine::run()
 		return -1;
     }
 
-	
+	return 0;
 }
 
 //int Engine::portAudioInitialise()
@@ -185,6 +185,7 @@ int Engine::glfwInitialise()
 
 	glClear(GL_COLOR_BUFFER_BIT);
 	glfwSwapBuffers(window);
+    return 0;
 }
 
 void Engine::imguiInitialise()
@@ -197,26 +198,26 @@ void Engine::imguiInitialise()
     ImGui_ImplOpenGL3_Init("#version 330");
 }
 
-//void Engine::loadSound()
-//{
-//    // load an asset in the resource manager
-//    auto asset = resourceManager->getAsset("assets/audio/BigWave.wav");
-//
-//    if (asset && asset->isLoaded())
-//        std::cout << "Sound 1 loaded" << std::endl;
-//
-//    // assign an asset to a voice
-//    assetName = "Big Wave";
-//    eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(assetName, asset);
-//
-   //// load an asset in the resource manager
-   //asset = resourceManager->getAsset("assets/audio/TrapDoor.wav");
-   //assetName = "TrapDoor";
-   //if (asset && asset->isLoaded())
-   //    std::cout << "Sound 2 loaded" << std::endl;
-   //// assign an asset to a voice
-   //eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(assetName, asset);
-//}
+void Engine::loadSound()
+{
+    // load an asset in the resource manager
+    auto asset = resourceManager->getAsset("assets/audio/BigWave.wav");
+
+    if (asset && asset->isLoaded())
+        std::cout << "Sound 1 loaded" << std::endl;
+
+    // assign an asset to a voice
+    //assetName = "Big Wave";
+    //eventManager->getEvents()[0]->voiceManager->getVoices()[0]->assignVoice(assetName, asset);
+
+ //// load an asset in the resource manager
+ //asset = resourceManager->getAsset("assets/audio/TrapDoor.wav");
+ //assetName = "TrapDoor";
+ //if (asset && asset->isLoaded())
+ //    std::cout << "Sound 2 loaded" << std::endl;
+ //// assign an asset to a voice
+ //eventManager->getEvents()[0]->voiceManager->getVoices()[1]->assignVoice(assetName, asset);
+}
 
 //int Engine::playbackInitialise()
 //{

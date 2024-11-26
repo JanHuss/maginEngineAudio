@@ -1,29 +1,29 @@
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\AudioAsset.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\AudioAsset.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\AudioEngineInterface.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\AudioEngineInterface.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\BitCrush.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\BitCrush.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\Budget.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Budget.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\BufferManager.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\BufferManager.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\DataManager.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\DataManager.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\Delay.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Delay.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\EffectBase.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EffectBase.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\EffectChain.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EffectChain.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\EffectManager.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EffectManager.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\Engine.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Engine.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\Event.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Event.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\EventFrameUI.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EventFrameUI.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\EventManager.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EventManager.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\glad.c;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\glad.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\imgui\imgui.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_demo.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_demo.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_draw.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_draw.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_impl_glfw.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_impl_glfw.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_impl_opengl3.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_impl_opengl3.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_tables.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_tables.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_widgets.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_widgets.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\main.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\main.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\Playback.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Playback.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\ResourceManager.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\ResourceManager.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\UI.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\UI.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\Voice.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Voice.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\VoiceFrameUI.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\VoiceFrameUI.obj
-C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\VoiceManager.cpp;C:\Users\2101697\Documents\maginEngineAudio\AudioEngine\AudioEngine\x64\Debug\VoiceManager.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\AudioAsset.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\AudioAsset.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\AudioEngineInterface.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\AudioEngineInterface.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\BitCrush.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\BitCrush.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Budget.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Budget.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\BufferManager.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\BufferManager.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\DataManager.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\DataManager.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Delay.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Delay.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\EffectBase.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EffectBase.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\EffectChain.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EffectChain.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\EffectManager.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EffectManager.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Engine.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Engine.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Event.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Event.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\EventFrameUI.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EventFrameUI.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\EventManager.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\EventManager.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\glad.c;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\glad.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\imgui\imgui.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_demo.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_demo.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_draw.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_draw.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_impl_glfw.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_impl_glfw.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_impl_opengl3.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_impl_opengl3.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_tables.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_tables.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\imgui\imgui_widgets.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\imgui_widgets.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\main.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\main.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Playback.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Playback.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\ResourceManager.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\ResourceManager.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\UI.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\UI.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\Voice.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\Voice.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\VoiceFrameUI.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\VoiceFrameUI.obj
+D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\VoiceManager.cpp;D:\De Daduck (Jan)\Work\Audio Programming\MaginEngineAudio\AudioEngine\AudioEngine\x64\Debug\VoiceManager.obj

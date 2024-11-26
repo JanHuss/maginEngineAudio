@@ -38,7 +38,7 @@ public:
 	// Getters
 	
 private:
-	void freeMemory(size_t amount);
+	//void freeMemory(size_t amount);
 
 	std::map<std::string, std::shared_ptr<AudioAsset>> assetCache;
 

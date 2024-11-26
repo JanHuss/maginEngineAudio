@@ -28,7 +28,7 @@ bool AudioAsset::load()
     result = ma_decoder_init_file(filePath.c_str(), NULL, &decoder);
     if (result != MA_SUCCESS)
     {
-		    std::cerr << "Failed to initialize decoder while loading: " << filePath 
+		    std::cerr << "Audio Asset: Failed to initialize decoder while loading: " << filePath 
               << ". Error code: " << result << std::endl;
             return false;
 	}
