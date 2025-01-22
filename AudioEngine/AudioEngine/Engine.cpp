@@ -44,9 +44,7 @@ void Engine::init()
 
 
     eventManager->init();
-
-	// PortAudio Initialise
-	//portAudioInitialise();
+	
 	// MiniAudio Initialise
     miniAudioInitialise();
 	// GLFW initialise
@@ -64,6 +62,12 @@ void Engine::init()
     eventManager->getEvents()[0]->voiceManager->addVoice(voice);
     playback->registerVoice(voice);
     eventManager->getEvents()[0]->voiceManager->getVoices()[0]->play();
+	
+	//asset = resourceManager->getAsset("assets/audio/TrapDoor.wav");
+	//voice = std::make_shared<Voice>(asset);
+	//eventManager->getEvents()[0]->voiceManager->addVoice(voice);
+	//playback->registerVoice(voice);
+	//eventManager->getEvents()[0]->voiceManager->getVoices()[1]->play();
 }
 
 int Engine::run()
@@ -83,8 +87,7 @@ int Engine::run()
 	    glClearColor(0.07f, 0.13f, 0.17f, 1.0f); // sets window colour. not important really
         glClear(GL_COLOR_BUFFER_BIT);
         // Update functions here. pass through delta time as dt if needed
-
-
+		
         // Render here
 		uI->renderEngineFrame(); 	
         eventManager->render();

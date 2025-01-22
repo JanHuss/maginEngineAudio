@@ -8,47 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c70014c-d99c-4e9f-ac75-b74aa66565c8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AudioEngine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AudioEngine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/AudioAsset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/AudioAsset.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/AudioAsset.h" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/AudioAsset.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AudioEngine/Engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/Engine.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioAsset.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioAsset.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.exe.recipe" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.exe.recipe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/AudioEngine.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/AudioEngine.lastbuildstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/CL.command.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/Cl.items.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/Cl.items.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/link.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngine.tlog/link.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngineInterface.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/AudioEngineInterface.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/BitCrush.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/BitCrush.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/Budget.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/Budget.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/BufferManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/BufferManager.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/DataManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/DataManager.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/Delay.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/Delay.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/EffectBase.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/EffectBase.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/EffectChain.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/EffectChain.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/EffectManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/EffectManager.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/Engine.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/Engine.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/Event.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/Event.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/EventFrameUI.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/EventFrameUI.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/EventManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/EventManager.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/Playback.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/Playback.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/ResourceManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/ResourceManager.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/UI.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/UI.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/Voice.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/Voice.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/VoiceFrameUI.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/VoiceFrameUI.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/VoiceManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/VoiceManager.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/glad.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/glad.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_demo.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_demo.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_draw.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_draw.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_impl_glfw.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_impl_glfw.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_impl_opengl3.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_impl_opengl3.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_tables.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_tables.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_widgets.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/imgui_widgets.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/main.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/vc143.idb" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/vc143.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AudioEngine/x64/Debug/vc143.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AudioEngine/x64/Debug/vc143.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x64/Debug/AudioEngine.exe" beforeDir="false" afterPath="$PROJECT_DIR$/x64/Debug/AudioEngine.exe" afterDir="false" />
@@ -95,10 +63,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "C++ Project.AudioEngine.executor": "Debug",
+    "C++ Project.AudioEngine.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "fix-playback-bug",
+    "git-widget-placeholder": "setup-transport-controls",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -176,6 +144,9 @@
       <updated>1737539299350</updated>
       <workItem from="1737539302631" duration="353000" />
       <workItem from="1737539673781" duration="4720000" />
+      <workItem from="1737545692229" duration="34000" />
+      <workItem from="1737545739254" duration="30000" />
+      <workItem from="1737545782282" duration="7097000" />
     </task>
     <servers />
   </component>

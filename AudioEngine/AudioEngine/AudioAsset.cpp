@@ -30,8 +30,9 @@ bool AudioAsset::load()
 	//ma_decoder decoder; // variable that decodes the audio file
 	std::cout << "AudioAsset: filepath: " << filePath.c_str() << std::endl;
 
-
+	// set the decoders configurations by utilising the ma_decoder_config_init var
 	decoderConfig = ma_decoder_config_init(ma_format_f32, 2, 41000);
+	
 	std::cout << "DecoderConfig bit depth: " << decoderConfig.format << std::endl;
 	// Initialize decoder 
     result = ma_decoder_init_file(filePath.c_str(), &decoderConfig, &decoder);
