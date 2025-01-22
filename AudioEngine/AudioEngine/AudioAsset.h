@@ -1,8 +1,8 @@
 #pragma once
 
-#include "vector"
-#include "string"
-#include "iostream"
+#include <vector>
+#include <string>
+#include <iostream>
 
 #include "miniaudio.h"
 
@@ -48,5 +48,7 @@ public:
 	bool isLoaded();
 
 	ma_decoder decoder; // test
+	ma_decoder_config decoderConfig; // create decoder config variable
+	
 };
 

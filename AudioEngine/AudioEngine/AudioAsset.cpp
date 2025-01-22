@@ -1,11 +1,16 @@
 #include "AudioAsset.h"
 
-AudioAsset::AudioAsset(const std::string& aFilePath) : filePath(aFilePath)
+AudioAsset::AudioAsset(const std::string& aFilePath)
 {
+	filePath = aFilePath;
+	
 	totalFrames = 0;
 	channels = 0;
 	sampleRate = 0;
 	loaded = false;
+
+	
+	
 }
 
 AudioAsset::~AudioAsset()
@@ -23,9 +28,14 @@ bool AudioAsset::load()
 
 	ma_result result; // varible that checks if operation was successful or not
 	//ma_decoder decoder; // variable that decodes the audio file
+	std::cout << "AudioAsset: filepath: " << filePath.c_str() << std::endl;
 
+
+	decoderConfig = ma_decoder_config_init(ma_format_f32, 2, 41000);
+	std::cout << "DecoderConfig bit depth: " << decoderConfig.format << std::endl;
 	// Initialize decoder 
-    result = ma_decoder_init_file(filePath.c_str(), NULL, &decoder);
+    result = ma_decoder_init_file(filePath.c_str(), &decoderConfig, &decoder);
+	
     if (result != MA_SUCCESS)
     {
 		    std::cerr << "Audio Asset: Failed to initialize decoder while loading: " << filePath 
@@ -33,6 +43,8 @@ bool AudioAsset::load()
             return false;
 	}
 
+
+	
 	// get the total number of frames in the audio file
 	if (result = ma_decoder_get_length_in_pcm_frames(&decoder, &totalFrames)) 
     {
@@ -46,7 +58,7 @@ bool AudioAsset::load()
 
 	// Resize audio data buffer to fit the audio data
     audioData.resize(totalFrames * channels);		
-
+	
 	// Read audio data from audio file into buffer
 	result = ma_decoder_read_pcm_frames(&decoder, audioData.data(), totalFrames, &totalFrames);
 	if (result != MA_SUCCESS)
@@ -55,6 +67,7 @@ bool AudioAsset::load()
 		ma_decoder_uninit(&decoder);
         return false;
     }
+
 
 	// Check to ensure all data within asset is correct
     std::cout << "- Audio data check within audioAsset.load() ----------------------" << std::endl;

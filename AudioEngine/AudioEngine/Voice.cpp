@@ -77,6 +77,7 @@ const std::vector<float>& Voice::getAudioData() const
 
 ma_uint64 Voice::getAudioPlayhead() const
 {
+	//std::cout << "Get Audio playhead: " << playhead << std::endl;
 	return playhead;
 }
 
