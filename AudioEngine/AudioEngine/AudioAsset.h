@@ -48,5 +48,7 @@ public:
 	bool isLoaded();
 
 	ma_decoder decoder; // test
+	ma_decoder_config decoderConfig; // create decoder config variable
+	
 };
 
